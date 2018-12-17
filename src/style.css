@@ -8,7 +8,9 @@ body {
     background-attachment: fixed;
 }
 
-
+.logo img {
+    width: 20%;
+}
 li {
     text-align: center;
     width: 150px;
@@ -17,7 +19,7 @@ li {
     font-size: 12px;
     list-style: none;
     padding: 0;
-    margin: 50px 0 0 0;
+    margin: 20px 0 0 0;
     line-height: 30px;
 }
 
