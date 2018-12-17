@@ -1,0 +1,57 @@
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-size: auto;
+    background-image: url(https://i.imgur.com/Bt0sdpD.jpg?1) ;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.logo img {
+    width: 20%;
+}
+li {
+    text-align: center;
+    width: 150px;
+    display: inline-block; /*hace que nuestras etiquetas sea una al costado de otra */
+    border: none;
+    font-size: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    background-color: rgb(49, 49, 49);
+    border: none;
+    display: block; /* Usamos el display para que este el mismo ancho clickeable */
+}
+
+a:hover {
+    color:rgb(255, 255, 255);
+    border: none;
+    background-color: rgb(136, 135, 135);
+    transition-duration: 0.8s;  
+}
+
+.busquedados {
+    width: 100px;
+    margin: 30px 0 0 30px;
+    text-decoration: none;
+    color:white;
+    background-color: rgb(238, 96, 30);
+    border-radius: 10px;
+    border: none;
+    line-height: 20px;
+}
+
+.busqueda {
+    position: relative;
+    display: inline-block;
+    padding: 1em;
+
+}
