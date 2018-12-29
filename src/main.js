@@ -1,48 +1,44 @@
-const root = document.getElementById('root');
-const arrayPokemon = POKEMON.pokemon;
+const pokemonDataCopy = Object.assign(POKEMON.pokemon);
+// const botones = document.getElementById('botones');
+const allPokemon = document.getElementById('allPokemon');
+const optionType = document.getElementById('opcionesTipo');
+// const resultadoTipo = document.getElementById('resultadoTipo');
+// const optionEgg = document.getElementById('opcionesKm');
+// const resultadoKm = document.getElementById('resultadoKm');
 
-const lista = (data) => {
+optionType.addEventListener('change', () => { // Llamando a la variable optionEgg, para hacerle click es CHANGE / Creando una funcion anonima
+  console.log(optionType.value); // Creo una console.log para ver si funciona mi select , y luego le doy un valor para jalar el value de mis opciones
+});
+
+// optionEgg.addEventListener('change', () => {
+//     const optionEggResult = [];
+//     for (let i = 0; i < pokemonDataCopy.length; i++) {
+//         if ("2km" === pokemonDataCopy[i].egg);
+//     }
+//     return optionEggResult
+// });
+
+// console.log(optionEggResult);
+
+const completeList = (data) => {
   let string = '';
-  data.forEach((arrayPokemon) => {
+  data.forEach((pokemonDataCopy) => {
     const carta = `
-      <div class = "list"></div>
-      ${arrayPokemon.name}
-      <img class= "imagen" src=${arrayPokemon.img}> 
-      `;
+        <div class="card-link">
+         <article class="blog-card">
+          <div class="detalles">
+           <h1 class = "numero">${pokemonDataCopy.num}</h1>
+           <h2 class = "list"> ${pokemonDataCopy.name} </h2>
+           <h3><img class= "imagen" src=${pokemonDataCopy.img}></h3>
+           </div>
+          </article>
+        </div>
+          `;
     string += carta;
   });
-  root.innerHTML = string;
+  allPokemon.innerHTML = string;
 };
 
 
-lista(arrayPokemon);// invocar a la funcion 
+completeList(pokemonDataCopy);// invocar a la funcion 
 
-// listaData(POKEMON.pokemon);
-
-// console.log (arrayPokemon);
-// // TABLA DE POKEMON c/u para entender la DATA console.table(POKEMON.pokemon[0]); 
-
-
-// // LLamo primero por ID, la lista de opciones que tengo que esta dentro de un select
-// const opciones = document.getElementById('opcionesTipo');
-// // Al escuchar el Click me haga algo, con el E qe es el objetivo
-// opciones.addEventListener('click',(e) => {
-
-// console.log(prueba.consultarTipo(e.target.value));
-// // Llamo al mensaje por su id, para que se inserte en el HTML
-//   document.getElementById('mensaje').innerHTML = prueba.consultarTipo(e.target.value)
-// });
-
-
-// const datos = POKEMON.pokemon[0]; // este es vulvasaur
-// const pruebavalorDos =  `
-//   <div class="POKEMON">
-//    <h2 class="id">
-//      ${datos.id}
-//    </h2>
-//    <p class="location">${datos.name}</p>
-//    <img class= "imagen" src=${datos.img}>
-//   </div>`;
-
-// // eslint-disable-next-line no-unused-vars
-// const pruebavalor = Object.entries(datos);
