@@ -1,4 +1,4 @@
-const root =document.getElementById('root');
+const root = document.getElementById('root');
 const arrayPokemon = POKEMON.pokemon;
 
 const lista = (data) => {
@@ -14,12 +14,12 @@ const lista = (data) => {
   root.innerHTML = string;
 };
 
-  
+
 lista(arrayPokemon);// invocar a la funcion 
 
-//listaData(POKEMON.pokemon);
+// listaData(POKEMON.pokemon);
 
-//console.log (arrayPokemon);
+// console.log (arrayPokemon);
 // // TABLA DE POKEMON c/u para entender la DATA console.table(POKEMON.pokemon[0]); 
 
 
