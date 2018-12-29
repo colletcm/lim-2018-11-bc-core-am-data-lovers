@@ -8,23 +8,22 @@
   </head>
   <body>
     <div class = "logo"> <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Pok%C3%A9mon_GO_logo.svg/1280px-Pok%C3%A9mon_GO_logo.svg.png"></div>
-    <div id="root"></div>
     <!-- <script src="./data/injuries/injuries.js"></script> -->
    <script src="./data/pokemon/pokemon.js"></script>
     <!-- <script src="./data/steam/steam.js"></script> -->
     <!-- <script src="./data/worldbank/worldbank.js"></script> -->
     <!--<script src="./data/lol/lol.js"></script>-->
     
-    <div>
+    <div class="botones" id ="botones">
       <li><a href="#">INICIO</a></li>
       <li><a href="#">POKEDEX</a></li>
       <li><a href="#">DEBILIDADES</a></li>
-      <li><a href="#">NOSOTROS</a></li>
+      <li><a href="#">HUEVOS</a></li>
     </div>
-    <div>
+    <!-- <div>
      <textarea id="cajadeTexto" type="text" placeholder="buscar"></textarea>
      <button id ="ingresar" type="button" class= "busquedados">Ingresar</button>
-    </div>
+    </div> -->
 
     <div>
       <select id = "opcionesTipo">
@@ -46,8 +45,19 @@
         <option value = "Dragon">Dragon</option>
         <option value = "Fuego">Fuego</option>
         </select>
-        <p id="mensaje"></p>
+        <p id="resultadoTipo"></p>
     </div>
+
+    <div>
+      <select id = "opcionesKm">
+        <option value ="2 km">2 km</option>
+        <option value ="5 km">5 km</option>
+        <option value ="10 km">10 km</option>
+        </select>
+        <p id="resultadoKm"></p>
+    </div>
+
+   <div id="allPokemon" class ="POKEMON"></div>
 
    <script src="data.js"></script>
    <script src="main.js"></script>
