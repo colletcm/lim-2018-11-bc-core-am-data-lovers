@@ -1,27 +1,37 @@
-// esta es una función de ejemplo, puedes ver como agregamos la función a nuestro objeto global window
-/* const example = () => {
-  return 'example';
-};
-
-window.example = example; */
-
-
-// PRUEBA CON CONDICIONALES 001 
-// Creo una constante tipo Consultartipo  que sea igual al string que me cree una funcion
-const consultarTipo = (string) => {
-// El valor del string que esta entrando, sea estrictamente igual a FUEGO
-  if (string === 'Fuego') {
-    // Para que me retorne
-    //return 'Escogiste tipo Fuego';
-    // eslint-disable-next-line no-undef
-    return (pruebavalorDos)
+// FILTRADO POR KM
+const filtradoKm = (data, distance) => {
+  let resultadoFiltradoKm = [];
+  const copyData = [];
+  for (let i = 0; i < data.length; i++) {
+    copyData.push(Object.assign({}, {
+      name: data[i].name, num: data[i].num, egg: data[i].egg, type: data[i].type, img: data[i].img
+    }));
   }
-  // en caso contrario
-  else {
-    return 'tu eleccion no es valida'
+  resultadoFiltradoKm = copyData.filter((objPokemon) => {
+    return objPokemon.egg === distance;
+  });
+  console.log(resultadoFiltradoKm);
+  return resultadoFiltradoKm;
+};
+
+// FILTRADO POR TIPO
+const filtradoDebilidades = (data, weaknesses) => {
+  let resultadoFiltradoDebilidades = [];
+  const copyData = [];
+  for (let i = 0; i < data.length; i++) {
+    copyData.push(Object.assign({}, {
+      name: data[i].name, num: data[i].num, weaknesses: data[i].weaknesses, type: data[i].type, img: data[i].img
+    }));
   }
+  resultadoFiltradoDebilidades = copyData.filter((objPokemon) => {
+    return objPokemon.weaknesses.includes(weaknesses) === true;
+  });
+  return resultadoFiltradoDebilidades;
 };
-// Mostrar en windows consultar tipo
-window.prueba = {
-  consultarTipo
+
+window.dataPokemon = {
+  filtradoKm,
+  filtradoDebilidades
 };
+
+//FILTRADO DE A-Z Z-A
