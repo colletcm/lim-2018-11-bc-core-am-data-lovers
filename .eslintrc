@@ -37,7 +37,7 @@
   },
   "extends": "eslint:recommended",
   "globals": {
-    "example": false,
-    "POKEMON": false
+    "POKEMON": false,
+    "dataPokemon": false
   }
 }

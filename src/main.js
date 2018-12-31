@@ -1,44 +1,54 @@
-const pokemonDataCopy = Object.assign(POKEMON.pokemon);
-// const botones = document.getElementById('botones');
-const allPokemon = document.getElementById('allPokemon');
+const allPokemon = POKEMON.pokemon;
+const resultadoAllPokemon = document.getElementById('allPokemon');
 const optionType = document.getElementById('opcionesTipo');
-// const resultadoTipo = document.getElementById('resultadoTipo');
-// const optionEgg = document.getElementById('opcionesKm');
-// const resultadoKm = document.getElementById('resultadoKm');
+const optionEgg = document.getElementById('opcionesKm');
 
-optionType.addEventListener('change', () => { // Llamando a la variable optionEgg, para hacerle click es CHANGE / Creando una funcion anonima
-  console.log(optionType.value); // Creo una console.log para ver si funciona mi select , y luego le doy un valor para jalar el value de mis opciones
-});
+// const botones = document.getElementById('botones');
+// const inicio = document.getElementById('inicio');
+// const pokedex = document.getElementById('pokedex');
+// const debilidades = document.getElementById('debilidades');
+// const huevos = document.getElementById('huevos');
+// const generalSelector = document.getElementById('generalselector').style = 'display:none';
 
-// optionEgg.addEventListener('change', () => {
-//     const optionEggResult = [];
-//     for (let i = 0; i < pokemonDataCopy.length; i++) {
-//         if ("2km" === pokemonDataCopy[i].egg);
-//     }
-//     return optionEggResult
-// });
+// const ventana = () => {
+//   document.getElementById('generalselector').style = 'display:block';
+// };
+// pokedex.addEventListener('click', ventana); 
 
-// console.log(optionEggResult);
-
+// TODA LA DATA PINTADA
 const completeList = (data) => {
-  let string = '';
+  let pintadoAllData = '';
   data.forEach((pokemonDataCopy) => {
     const carta = `
-        <div class="card-link">
-         <article class="blog-card">
-          <div class="detalles">
-           <h1 class = "numero">${pokemonDataCopy.num}</h1>
-           <h2 class = "list"> ${pokemonDataCopy.name} </h2>
-           <h3><img class= "imagen" src=${pokemonDataCopy.img}></h3>
-           </div>
-          </article>
-        </div>
-          `;
-    string += carta;
+     <div class="card-link">
+      <article class="blog-card">
+       <div class="detalles">
+         <h1 class = "numero">${pokemonDataCopy.num}</h1>
+         <h2 class = "list"> ${pokemonDataCopy.name} </h2>
+         <h3><img class= "imagen" src=${pokemonDataCopy.img}></h3>
+         <h4 class = "type">${pokemonDataCopy.type}</h4>
+       </div>
+     </article>
+     </div>
+    `;
+    pintadoAllData += carta;
   });
-  allPokemon.innerHTML = string;
+  resultadoAllPokemon.innerHTML = pintadoAllData;
+
 };
 
+// FILTRANDO POR KM
+optionEgg.addEventListener('change', () => {
+  const valueOptionEgg = optionEgg.value;
+  const functionFilter = dataPokemon.filtradoKm(allPokemon, valueOptionEgg);
+  completeList(functionFilter);
+});
 
-completeList(pokemonDataCopy);// invocar a la funcion 
+// FILTRADO POR DEBILIDADES
+optionType.addEventListener('change', () => {
+  const valueOptionWeaknesses = optionType.value;
+  const functionFilterWeaknesses = dataPokemon.filtradoDebilidades(allPokemon, valueOptionWeaknesses);
+  completeList(functionFilterWeaknesses);
+});
 
+//FILTRADO DE A-Z Z-A
