@@ -34,6 +34,7 @@ const completeList = (data) => {
     pintadoAllData += carta;
   });
   resultadoAllPokemon.innerHTML = pintadoAllData;
+
 };
 
 // FILTRANDO POR KM
