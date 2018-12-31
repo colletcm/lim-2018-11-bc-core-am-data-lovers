@@ -50,4 +50,4 @@ optionType.addEventListener('change', () => {
   completeList(functionFilterWeaknesses);
 });
 
-//FILTRADO DE A-Z Z-A
+// FILTRADO DE A-Z Z-A

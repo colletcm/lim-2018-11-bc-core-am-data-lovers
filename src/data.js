@@ -34,4 +34,4 @@ window.dataPokemon = {
   filtradoDebilidades
 };
 
-//FILTRADO DE A-Z Z-A
+// FILTRADO DE A-Z Z-A
