@@ -1,12 +1,12 @@
 require('../src/data.js');
 
-
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('dataPokemon', () => {
+  it('deberia ser un objeto', () => {
+    expect(typeof dataPokemon).toBe('object');
   });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  describe('dataPokemon.filtradoKm', () => {
+    it('deberia ser una funcion', () => {
+      expect(typeof dataPokemon.filtradoKm).toBe('function');
+    });
   });
 });
