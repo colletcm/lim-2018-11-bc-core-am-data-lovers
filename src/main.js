@@ -34,7 +34,6 @@ const completeList = (data) => {
     pintadoAllData += carta;
   });
   resultadoAllPokemon.innerHTML = pintadoAllData;
-
 };
 
 // FILTRANDO POR KM
@@ -51,4 +50,4 @@ optionType.addEventListener('change', () => {
   completeList(functionFilterWeaknesses);
 });
 
-//FILTRADO DE A-Z Z-A
+// FILTRADO DE A-Z Z-A
