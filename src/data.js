@@ -29,9 +29,26 @@ const filtradoDebilidades = (data, weaknesses) => {
   return resultadoFiltradoDebilidades;
 };
 
+// FILTRADO DE A-Z Z-A
+const ordenarAlfabeticamente = (data, ordenarPor) => {
+  const ordenarAscendente = data.sort((a, b) => {
+    if (a.name > b.name) {
+      return 1;
+    }
+    if (a.name < b.name) {
+      return -1;
+    }
+    return 0;
+  });
+
+  if (ordenarPor === 'ascendente') {
+    return ordenarAscendente;
+  } else {
+    return ordenarAscendente.reverse();
+  }
+};
 window.dataPokemon = {
   filtradoKm,
-  filtradoDebilidades
+  filtradoDebilidades,
+  ordenarAlfabeticamente
 };
-
-// FILTRADO DE A-Z Z-A

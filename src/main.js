@@ -2,7 +2,7 @@ const allPokemon = POKEMON.pokemon;
 const resultadoAllPokemon = document.getElementById('allPokemon');
 const optionType = document.getElementById('opcionesTipo');
 const optionEgg = document.getElementById('opcionesKm');
-
+const optionAsc = document.getElementById('opcionesOrdenar');
 // const botones = document.getElementById('botones');
 // const inicio = document.getElementById('inicio');
 // const pokedex = document.getElementById('pokedex');
@@ -51,3 +51,6 @@ optionType.addEventListener('change', () => {
 });
 
 // FILTRADO DE A-Z Z-A
+optionAsc.addEventListener('change', () => {
+  completeList(dataPokemon.ordenarAlfabeticamente(allPokemon, optionAsc.value));
+});
