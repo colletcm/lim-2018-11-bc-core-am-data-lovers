@@ -1,5 +1,6 @@
 const allPokemon = POKEMON.pokemon;
 const resultadoAllPokemon = document.getElementById('allPokemon');
+const optionWeak = document.getElementById('opcionesTipoDebilidades');
 const optionType = document.getElementById('opcionesTipo');
 const optionEgg = document.getElementById('opcionesKm');
 const optionAsc = document.getElementById('opcionesOrdenar');
@@ -44,10 +45,17 @@ optionEgg.addEventListener('change', () => {
 });
 
 // FILTRADO POR DEBILIDADES
-optionType.addEventListener('change', () => {
-  const valueOptionWeaknesses = optionType.value;
+optionWeak.addEventListener('change', () => {
+  const valueOptionWeaknesses = optionWeak.value;
   const functionFilterWeaknesses = dataPokemon.filtradoDebilidades(allPokemon, valueOptionWeaknesses);
   completeList(functionFilterWeaknesses);
+});
+
+// FILTRADO POR TIPO
+optionType.addEventListener('change', () => {
+  const valueOptionType = optionType.value;
+  const functionFilterType = dataPokemon.filtradoTipos(allPokemon, valueOptionType);
+  completeList(functionFilterType);
 });
 
 // FILTRADO DE A-Z Z-A
