@@ -15,6 +15,21 @@ const filtradoKm = (data, distance) => {
 };
 
 // FILTRADO POR TIPO
+const filtradoTipos = (data, type) => {
+  let resultadoFiltradoTipo = [];
+  const copyData = [];
+  for (let i = 0; i < data.length; i++) {
+    copyData.push(Object.assign({}, {
+      name: data[i].name, num: data[i].num, type: data[i].type, img: data[i].img
+    }));
+  }
+  resultadoFiltradoTipo = copyData.filter((objPokemon) => {
+    return objPokemon.type.includes(type) === true;
+  });
+  return resultadoFiltradoTipo;
+};
+
+// FILTRADO POR DEBILIDADES
 const filtradoDebilidades = (data, weaknesses) => {
   let resultadoFiltradoDebilidades = [];
   const copyData = [];
@@ -49,6 +64,7 @@ const ordenarAlfabeticamente = (data, ordenarPor) => {
 };
 window.dataPokemon = {
   filtradoKm,
+  filtradoTipos,
   filtradoDebilidades,
   ordenarAlfabeticamente
 };
