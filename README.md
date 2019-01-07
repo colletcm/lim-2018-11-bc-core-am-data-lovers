@@ -1,20 +1,5 @@
 # POKEDEX GO
 
-## Índice
-
-* [Descripción](#resumen-del-proyecto)
-* [Consideraciones generales](#consideraciones-generales)
-* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [Parte obligatoria](#parte-obligatoria)
-* [Parte opcional](#parte-opcional-hacker-edition)
-* [Consideraciones técnicas](#consideraciones-técnicas)
-* [Primeros pasos](#primeros-pasos)
-* [Contenido de referencia](#contenido-de-referencia)
-* [Checklist](#checklist)
-
-***
-## Descripción
-
 ## Definición del producto
 **POKEDEX GO** Es una Website de orientación y ayuda para jugadores de **Pokémon Go**. El juego de Realidad Aumentada que consiste en buscar, capturar y luchar con los personajes de la saga Pokémon.
 
@@ -62,31 +47,11 @@ Es una solución usando papel y lápiz que compila a grandes rasgos todas sugere
 
 #### Prototipo de Alta Fidelidad
 
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma]
+ [Figma]
 
 #### Testeos de usabilidad
 
-Durante el reto deberás realizar tests de usabilidad con distintos usuarios, y
-en base a los resultados de esos tests, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los tests y cómo los
-mejoraste en tu propuesta final.
+
 
 ### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
-
-Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
-Como mencionamos, **no** es necesario que construyas la interfaz tal como la
-diseñaste. Tendrás un tiempo limitado para hackear, así es que deberás
-priorizar.
-
-Como mínimo, tu implementación debe:
-
-1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista, etc.
-2. Permitir al usuario filtrar y ordenar la data.
-3. Calcular estadísticas de la colección (o subcolección) como media aritmética,
-   máximo y/o mínimo de algún atributo numérico, o contar cuántas veces aparece
-   un determinado valor, por ejemplo.
-4. Visualizarse sin problemas desde distintos tamaños de pantallas: móviles,
-   tablets y desktops.
 
