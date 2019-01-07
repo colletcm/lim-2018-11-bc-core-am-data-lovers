@@ -5,18 +5,97 @@
     <title>Pokedex GO</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="img/pokeball.png"/>
-  </head>
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="icon-pokedex"> ¡Pokedéx Go! </h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+             <li><a href="#" id="Noticias"> <img src=" ">POKEDEX</a></li>
+             <li><a href="#" id="Pokédex"> <img src=" ">DEBILIDADES</a></li>
+             <li><a href="#" id="Huevos Km"> <img src=" ">HUEVOS</a></li>
+             <li><a href="#" id="Debilidades"> <img src=" ">HUEVOS</a></li>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <section id="banner-001">
+            <img src="img/banner-001.jpg">
+            <div class="container">
+            <h2>Es momento de convertirse en un Maestro Pokémon</h2>
+            <p>Filtra la información de tus Pokémon por Tipos, debilidades, kilometraje por huevos y más</p>
+            <a href="#">Busca por nombre a tu Pokémon</a>
+            </div>
+        </section>
+        <!-- SECCION INTRODUCCION Y EXPLICACION DE LOS FILTRADOS -->
+        <section id = "introduccion">
+            <h2>Escoge tu filtro</h2>
+            <div class="container">
+                <div class="info-filtrado">
+                    <img src="img/Capa 0.png" alt="">
+                    <h4>Pokedéx</h4>
+                    <p>Lista de los 151 pokémon</p>
+                </div>
+                <div class="info-filtrado">
+                    <img src="img/mystic.png" alt="">
+                    <h4>Tipos</h4>
+                    <p>Filtra por tipo de Pokémon</p>
+                </div>
+                <div class="info-filtrado">
+                    <img src="img/instinct (2).png" alt="">
+                    <h4>Debilidades</h4>
+                    <p>Filtra por debilides a que tipo</p>
+                </div>
+                <div class="info-filtrado">
+                    <img src="img/Capa 1.png" alt="">
+                    <h4>Caramelos</h4>
+                    <p>potenciador de combate</p>
+                </div>
+                <div class="info-filtrado">
+                    <img src="img/egg.png" alt="">
+                    <h4>Huevos</h4>
+                    <p>eclosiona un pokémon</p>
+                </div>
+            </div>
+            <p></p>
+        </section>
+        <!-- SECCION ULTIMAS NOCTICIAS -->
+        <section id="noticias">
+            <h3> Noticias</h2>
+            <div class="container">
+               <article>
+                   <img src="img/img-not-001.jpg">
+                   <h4>¡NUEVO AÑO, NUEVOS RETOS!</h4>
+                   <p>Empieza el nuevo año con el Eclosionatón de la función Sincroaventura</p>
+               </article>
+               <article>
+                    <img src="img/img-not-004.jpg">
+                    <h4>¡ÚNETE A LA ZONA SAFARI!</h4>
+                    <p>Evento de Pokémon GO en Porto Alegre, Brasil! </p>
+                </article>
+                <article>
+                    <img src="img/img-not-003.jpg">
+                    <h4>Te aguarda un nuevo año legendario</h4>
+                    <p>mocionantes oportunidades de conseguir logros de investigación </p>
+                    </article>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    
 
   <body>
     <div class = "logo" > <img src="img/logo-poke-go.png" ></div>
     <script src="./data/pokemon/pokemon.js"></script>
     
-    <div class="botones" id ="botones">
-      <li><a href="#" id="inicio">INICIO</a></li>
-      <li><a href="#" id="pokedex">POKEDEX</a></li>
-      <li><a href="#" id="debilidades">DEBILIDADES</a></li>
-      <li><a href="#" id="huevos">HUEVOS</a></li>
-    </div>
    
   <form class= "general" id ="generalselector">
       <select class="lista" id = "opcionesTipoDebilidades">

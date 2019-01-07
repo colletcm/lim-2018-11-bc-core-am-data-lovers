@@ -1,4 +1,186 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url(https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto|Staatliches|Thasadith);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway","Lato","Staatliches", "Thasadith";
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background: #333;
+    color: #fff;
+    /* poner el header pegado en la pagina */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*para que sea el header que este delante de todo */
+    z-index: 100;
+}
+
+.container {
+    width: 98%;
+    margin:auto;
+}
+
+h1 {
+    /* Para que flote */
+    float:left;
+}
+
+header .container{
+    display: table;
+}
+
+.icon-pokedex {
+    font-size: 25px;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#introduccion {
+ text-align: center;
+}
+/* ----------------------------MENU-------------------------- */
+#menu-bar {
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 30px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    /* Creando el menu desplegable */
+    position: absolute;
+    /* top de 60px para que comience desde abajo */
+    top: 60px;
+    left:0;    
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    /* Ocultamos el menu para luego mostrarlo */
+    transition: all 0.4s;
+    transform: translateX(-100%);
+}
+
+.menu a {
+    display: block;
+    color:#fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+/* Al pasar el mouse cambia de color */
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}
+
+/* ----------------------------BANNER-------------------------- */
+
+#banner-001 {
+    margin-top: 60px;
+}
+
+#banner-001 img {
+    width:  100%;
+    height: 100%;
+}
+
+/* Aqui haremos que el texto funcione a base de banner-001 */
+#banner-001 .container {
+    position: absolute;
+    /* Para que el texto se pinte en el banner */
+    top: 30%;
+    left: 50%;
+    transform: translate(-40%) translateY(-50%);
+    color: #fff;
+}
+
+#banner-001 h2 {
+    font-size: 20px;
+}
+
+#banner-001 a {
+    display: block;
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    border: 3px solid white; 
+}
+
+#banner-001 a:hover {
+    background: rgba(50, 50, 50, 0.5);
+}
+/* ----------------------------INTRODUCCION FILTRADO-------------------------- */
+
+.info-filtrado {
+    margin: 20px;
+    justify-content: center;
+    display: inline-block;
+}
+
+#introduccion .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-filtrado img {
+    width: 100%;
+    max-width: 50px;
+    position: center;
+}
+/* ----------------------------NOTICIAS-------------------------- */
+
+#noticias h3, h4 {
+    text-align: center;
+}
+
+#noticias {
+    justify-content: center;
+}
+
+#noticias .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#noticias article {
+    margin: 10px;
+}
+
+#noticias img {
+    width: 100%;
+    max-width: 280px;
+    position: center;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
 
 body {
     font-family: sans-serif;

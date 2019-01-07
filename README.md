@@ -47,7 +47,9 @@ Es una solución usando papel y lápiz que compila a grandes rasgos todas sugere
 
 #### Prototipo de Alta Fidelidad
 
- [Figma]
+
+ [Zeplin]https://zpl.io/adr9Bm7
+ [Figma]https://www.figma.com/file/eaR9NGQ3qBMAkcyEQJwZgAXl/Untitled?node-id=34%3A92
 
 #### Testeos de usabilidad
 
