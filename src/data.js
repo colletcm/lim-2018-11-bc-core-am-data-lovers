@@ -62,6 +62,7 @@ const ordenarAlfabeticamente = (data, ordenarPor) => {
     return ordenarAscendente.reverse();
   }
 };
+
 window.dataPokemon = {
   filtradoKm,
   filtradoTipos,
