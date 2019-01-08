@@ -46,11 +46,11 @@ const filtradoDebilidades = (data, weaknesses) => {
 
 // FILTRADO DE A-Z Z-A
 const ordenarAlfabeticamente = (data, ordenarPor) => {
-  const ordenarAscendente = data.sort((a, b) => {
-    if (a.name > b.name) {
+  const ordenarAscendente = data.sort((element1, element2) => {
+    if (element1.name > element2.name) {
       return 1;
     }
-    if (a.name < b.name) {
+    if (element1.name < element2.name) {
       return -1;
     }
     return 0;

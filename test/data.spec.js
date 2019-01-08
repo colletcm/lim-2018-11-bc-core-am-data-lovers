@@ -184,7 +184,7 @@ const testAllPokemon3 = [{
     'Grass',
     'Poison'
   ]
-  }, {
+}, {
   'num': '002',
   'name': 'Ivysaur',
   'img': 'http://www.serebii.net/pokemongo/pokemon/002.png',
@@ -192,7 +192,7 @@ const testAllPokemon3 = [{
     'Grass',
     'Poison'
   ]
-  }, {
+}, {
   'num': '003',
   'name': 'Venusaur',
   'img': 'http://www.serebii.net/pokemongo/pokemon/003.png',
@@ -210,14 +210,14 @@ const testAllPokemon4 = [{
     'Grass',
     'Poison'
   ],
-  },{
+}, {
   'num': '004',
   'name': 'Charmander',
   'img': 'http://www.serebii.net/pokemongo/pokemon/004.png',
   'type': [
     'Fire'
   ],
-  },{
+}, {
   'num': '005',
   'name': 'Charmeleon',
   'img': 'http://www.serebii.net/pokemongo/pokemon/005.png',
@@ -232,7 +232,7 @@ const testAllPokemon4 = [{
     'Grass',
     'Poison'
   ],
- },{
+}, {
   'num': '003',
   'name': 'Venusaur',
   'img': 'http://www.serebii.net/pokemongo/pokemon/003.png',
@@ -240,7 +240,7 @@ const testAllPokemon4 = [{
     'Grass',
     'Poison'
   ],
- }];
+}];
 
 describe('dataPokemon', () => {
   it('deberia ser un objeto', () => {
