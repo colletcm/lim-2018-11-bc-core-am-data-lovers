@@ -7,7 +7,12 @@
 }
 
 body {
-    font-family: "Raleway","Lato","Staatliches", "Thasadith";
+    font-family: sans-serif;
+    text-align: center;
+    background-size: auto;
+    background-image: url(https://i.imgur.com/Bt0sdpD.jpg?1) ;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 header{
@@ -31,6 +36,7 @@ header{
 h1 {
     /* Para que flote */
     float:left;
+    margin: 12px;
 }
 
 header .container{
@@ -48,6 +54,38 @@ section {
 
 #introduccion {
  text-align: center;
+}
+
+/* Creacion de pie de página , redes sociales  y copyright */
+
+footer .container {
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.copyright {
+    font-size: 15px;
+    margin: 15px;
+    color: white;
+}
+.redes-sociales {
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    font-size: 28px;
+    
+}
+.redes-sociales a {
+    text-decoration: none;
+    color: white;
+}
+/* Hacerlo responsive para web */
+@media (min-width:1024px){
+    .container {
+        width: 1000px;
+    }
 }
 /* ----------------------------MENU-------------------------- */
 #menu-bar {
@@ -82,7 +120,7 @@ header label {
     height: 50px;
     text-decoration: none;
     padding: 18px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     }
 
 /* Al pasar el mouse cambia de color */
@@ -93,12 +131,26 @@ header label {
 #menu-bar:checked ~ .menu {
     transform: translateX(0%);
 }
+/* Hacerlo responsive para web */
+@media(min-width:1024px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translate(0%);
+        float:right;
+        display: flex;
+    }
+
+    .menu a {
+        border: none;
+    }
+    header label {
+        display: none;
+    }
+}
 
 /* ----------------------------BANNER-------------------------- */
-
-#banner-001 {
-    margin-top: 60px;
-}
 
 #banner-001 img {
     width:  100%;
@@ -121,17 +173,50 @@ header label {
 
 #banner-001 a {
     display: block;
-    width: 100px;
     color: white;
     text-decoration: none;
     padding: 5px;
     margin-top: 10px;
     border: 3px solid white; 
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 70px;
+    width: 70%;
+    height: 60px;
 }
 
 #banner-001 a:hover {
     background: rgba(50, 50, 50, 0.5);
 }
+
+@media (min-width:480px){
+    #banner-001 h2 {
+        font-size: 30px;
+    }
+    #banner-001 a {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:768px){
+    #banner-001 {
+        height: 400px;
+        overflow: hidden;
+
+    }
+    #banner img {
+        height: auto;
+        margin-top: -100px;
+    }
+}
+
+@media (min-width:1024px){
+ 
+    #banner img {
+        height: auto;
+        margin-top: -200px;
+    }
+}
+
 /* ----------------------------INTRODUCCION FILTRADO-------------------------- */
 
 .info-filtrado {
@@ -180,75 +265,12 @@ header label {
 /* ----------------------------------------------------------------------------------- */
 
 
-
-
-body {
-    font-family: sans-serif;
-    text-align: center;
-    background-size: auto;
-    background-image: url(https://i.imgur.com/Bt0sdpD.jpg?1) ;
-    background-repeat: repeat;
-    background-attachment: fixed;
-}
-
-
-.logo img {
-    width: 20%;
-}
-li {
-    text-align: center;
-    width: 150px;
-    display: inline-block; /*hace que nuestras etiquetas sea una al costado de otra */
-    border: none;
-    font-size: 12px;
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0 0;
-    line-height: 30px;
-}
-
-a {
-    text-decoration: none;
-    color:white;
-    background-color: rgb(49, 49, 49);
-    border: none;
-    display: block; /* Usamos el display para que este el mismo ancho clickeable */
-}
-
-a:hover {
-    color:rgb(255, 255, 255);
-    border: none;
-    background-color: rgb(136, 135, 135);
-    transition-duration: 0.8s;  
-}
-
-.busquedados {
-    width: 100px;
-    margin: 30px 0 0 30px;
-    text-decoration: none;
-    color:white;
-    background-color: rgb(238, 96, 30);
-    border-radius: 10px;
-    border: none;
-    line-height: 20px;
-}
-
-.busqueda {
-    position: relative;
-    display: inline-block;
-    padding: 1em;
-
-}
-
 .list { 
     /* Nombre  */
   color: #3e3e3e;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
-  
-
 }
-
 .numero {
     /* Numero en la pokedex */
     color: #b5b5b5;
@@ -256,7 +278,6 @@ a:hover {
     font-size: 13px;
     text-align: center;
 }
-
 .imagen {
     width: 100px;
     height:100px;
@@ -276,20 +297,12 @@ a:hover {
     height: 150px;
     margin: 2%;
     flex-direction:row; /* hace que los los elementos flexibles vayan para una direccion*/
-  }
+}
   
-  .blog-card :hover {
+.blog-card :hover {
     transition: opacity 0.3s ease;
     opacity: 0.9;
-  }
-
-  .mensaje {
-      position: center;
-  }
-
-  .logo {
-    margin: 30px 0 20px 0px;
-  }
+}
 
 .lista{
     text-align: center;
@@ -305,12 +318,4 @@ a:hover {
     display: flex;
     justify-content: center;
     
-}
-
-.badge-Fire {
-  background-color: red;
-  border-radius: 10px;
-  padding: 2px 10px;
-  color: #ffffff;
-  text-align: center;
 }

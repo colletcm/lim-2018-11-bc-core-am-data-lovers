@@ -26,47 +26,51 @@
     <main>
         <section id="banner-001">
             <img src="img/banner-001.jpg">
+            <!-- <video width="100%" preload="auto" autoplay loop muted >
+             <source src="img/FONDO POKEMON.mp4" type="video/mp4">
+            </video> -->
+
             <div class="container">
             <h2>Es momento de convertirse en un Maestro Pokémon</h2>
             <p>Filtra la información de tus Pokémon por Tipos, debilidades, kilometraje por huevos y más</p>
             <a href="#">Busca por nombre a tu Pokémon</a>
             </div>
         </section>
-        <!-- SECCION INTRODUCCION Y EXPLICACION DE LOS FILTRADOS -->
-        <section id = "introduccion">
-            <h2>Escoge tu filtro</h2>
-            <div class="container">
-                <div class="info-filtrado">
-                    <img src="img/Capa 0.png" alt="">
-                    <h4>Pokedéx</h4>
-                    <p>Lista de los 151 pokémon</p>
-                </div>
-                <div class="info-filtrado">
-                    <img src="img/mystic.png" alt="">
-                    <h4>Tipos</h4>
-                    <p>Filtra por tipo de Pokémon</p>
-                </div>
-                <div class="info-filtrado">
-                    <img src="img/instinct (2).png" alt="">
-                    <h4>Debilidades</h4>
-                    <p>Filtra por debilides a que tipo</p>
-                </div>
-                <div class="info-filtrado">
-                    <img src="img/Capa 1.png" alt="">
-                    <h4>Caramelos</h4>
-                    <p>potenciador de combate</p>
-                </div>
-                <div class="info-filtrado">
-                    <img src="img/egg.png" alt="">
-                    <h4>Huevos</h4>
-                    <p>eclosiona un pokémon</p>
-                </div>
+    </main>
+<!----------- SECCION INTRODUCCION Y EXPLICACION DE LOS FILTRADOS ----------->
+    <section id = "introduccion">
+        <h2>Escoge tu filtro</h2>
+        <div class="container">
+            <div class="info-filtrado">
+                <img src="img/Capa 0.png" alt="">
+                <h4>Pokedéx</h4>
+                <p>Lista de los 151 pokémon</p>
             </div>
-            <p></p>
+            <div class="info-filtrado">
+                <img src="img/mystic.png" alt="">
+                <h4>Tipos</h4>
+                <p>Filtra por tipo de Pokémon</p>
+            </div>
+            <div class="info-filtrado">
+                <img src="img/instinct (2).png" alt="">
+                <h4>Debilidades</h4>
+                <p>Filtra por debilides a que tipo</p>
+            </div>
+            <div class="info-filtrado">
+                <img src="img/Capa 1.png" alt="">
+                <h4>Caramelos</h4>
+                <p>potenciador de combate</p>
+            </div>
+            <div class="info-filtrado">
+                <img src="img/egg.png" alt="">
+                <h4>Huevos</h4>
+                <p>eclosiona un pokémon</p>
+            </div>
+        </div>
         </section>
-        <!-- SECCION ULTIMAS NOCTICIAS -->
-        <section id="noticias">
-            <h3> Noticias</h2>
+<!----------- SECCION ULTIMAS NOCTICIAS ----------->
+    <section id="noticias">
+            <h3> Noticias</h3>
             <div class="container">
                <article>
                    <img src="img/img-not-001.jpg">
@@ -85,18 +89,7 @@
                     </article>
             </div>
         </section>
-    </main>
 
-
-
-
-    
-
-  <body>
-    <div class = "logo" > <img src="img/logo-poke-go.png" ></div>
-    <script src="./data/pokemon/pokemon.js"></script>
-    
-   
   <form class= "general" id ="generalselector">
       <select class="lista" id = "opcionesTipoDebilidades">
         <option value = "Tipos">Escoge la Debilidad</option>
@@ -151,9 +144,22 @@
 
    <div id="allPokemon" class ="POKEMON"></div>
 
-   <script src="data.js"></script>
-   <script src="main.js"></script>
-   
+<!----------- CREANDO ICONOS PARA IR A LAS REDES SOCIALES ----------->
+    <footer>
+        <div class="container">
+            <p class="copyright"> Pokédex Go &copy; 2019</p>
+            <div class="redes-sociales">
+                <a class="icon-facebook" href="https://www.facebook.com/pokedexGoPeru"></a>
+                <a class="icon-twitter" href="#"></a>
+                <a class="icon-instagram" href="#"></a>
+                <a class="icon-twitch" href="#"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./data/pokemon/pokemon.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+
   </body>
-  
 </html>
