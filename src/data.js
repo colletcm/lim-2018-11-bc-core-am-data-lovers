@@ -49,11 +49,11 @@ const ordenarAlfabeticamente = (data, ordenarPor) => {
   const ordenarAscendente = data.sort((element1, element2) => {
     if (element1.name > element2.name) {
       return 1;
-    }
-    if (element1.name < element2.name) {
+    } else if (element1.name < element2.name) {
       return -1;
+    } else {
+      return 0;
     }
-    return 0;
   });
 
   if (ordenarPor === 'ascendente') {
