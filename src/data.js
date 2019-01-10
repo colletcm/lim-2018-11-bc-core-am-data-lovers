@@ -51,7 +51,7 @@ const ordenarAlfabeticamente = (data, ordenarPor) => {
       return 1;
     } else {
       return -1;
-    } 
+    }
   });
 
   if (ordenarPor === 'ascendente') {
@@ -61,9 +61,24 @@ const ordenarAlfabeticamente = (data, ordenarPor) => {
   }
 };
 
+// Contar Caramelos 
+const filtradoDeCaramelos = (data) => {
+  // let resultadoFiltradoDeCaramelos = [];
+  const copyData = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].candy_count === number)
+      copyData.push(Object.assign({}, {
+        name: data[i].name, candy_count: data[i].candy_count
+      }));
+  }
+  return copyData;
+};
+
+
 window.dataPokemon = {
   filtradoKm,
   filtradoTipos,
   filtradoDebilidades,
+  filtradoDeCaramelos,
   ordenarAlfabeticamente
 };
