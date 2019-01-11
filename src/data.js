@@ -10,7 +10,6 @@ const filtradoKm = (data, distance) => {
   resultadoFiltradoKm = copyData.filter((objPokemon) => {
     return objPokemon.egg === distance;
   });
-  console.log(resultadoFiltradoKm);
   return resultadoFiltradoKm;
 };
 
@@ -62,16 +61,18 @@ const ordenarAlfabeticamente = (data, ordenarPor) => {
 };
 
 // Contar Caramelos 
-const filtradoDeCaramelos = (data) => {
-  // let resultadoFiltradoDeCaramelos = [];
+const filtradoDeCaramelos = (data, numeroElegido) => {
   const copyData = [];
   for (let i = 0; i < data.length; i++) {
-    if (data[i].candy_count === number)
-      copyData.push(Object.assign({}, {
-        name: data[i].name, candy_count: data[i].candy_count
-      }));
+    copyData.push(Object.assign({}, {
+      name: data[i].name, candyCount: data[i].candy_count
+    }));
   }
-  return copyData;
+  let resultadoDeCaramelos = copyData.filter(copyData => (copyData.candyCount <= 400));
+  resultadoDeCaramelos = copyData.filter((evolucionPokemon) => {
+    return evolucionPokemon.candyCount === numeroElegido;
+  });
+  return resultadoDeCaramelos;
 };
 
 
