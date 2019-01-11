@@ -62,3 +62,8 @@ optionType.addEventListener('change', () => {
 optionAsc.addEventListener('change', () => {
   completeList(dataPokemon.ordenarAlfabeticamente(allPokemon, optionAsc.value));
 });
+
+// INSERTAR TODA LA DATA DE CARAMELOS
+const resultadoCandy = dataPokemon.filtradoDeCaramelos(allPokemon);
+completeList(resultadoCandy);
+// resultadoAllPokemon.innerHTML = resultadoCandy;
