@@ -36,6 +36,7 @@ mainPokedex.addEventListener('click', () => {
 // Tercera Pantalla
 const mainEgg = document.getElementById('egg-menu');
 mainEgg.addEventListener('click', () => {
+  document.getElementById('main').style.display = 'none';
   document.getElementById('introduction').style.display = 'none';
   document.getElementById('screen-pokedex').style.display = 'none';
   document.getElementById('screen-sort').style.display = 'none';
@@ -43,6 +44,7 @@ mainEgg.addEventListener('click', () => {
   document.getElementById('screen-weak').style.display = 'none';
   document.getElementById('screen-type').style.display = 'none';
   document.getElementById('screen-news').style.display = 'none';
+  document.getElementById('allPokemon').style.display = 'block';
 });
 
 // Cuarta Pantalla
@@ -55,6 +57,7 @@ mainWeak.addEventListener('click', () => {
   document.getElementById('screen-weak').style.display = 'block';
   document.getElementById('screen-type').style.display = 'none';
   document.getElementById('screen-news').style.display = 'none';
+  document.getElementById('allPokemon').style.display = 'block';
 });
 
 // Quinta Pantalla
@@ -67,6 +70,7 @@ mainType.addEventListener('click', () => {
   document.getElementById('screen-weak').style.display = 'none';
   document.getElementById('screen-type').style.display = 'block';
   document.getElementById('screen-news').style.display = 'none';
+  document.getElementById('allPokemon').style.display = 'block';
 });
 
 // Sexta Pantalla
@@ -79,6 +83,7 @@ mainNews.addEventListener('click', () => {
   document.getElementById('screen-weak').style.display = 'none';
   document.getElementById('screen-type').style.display = 'none';
   document.getElementById('screen-news').style.display = 'block';
+  document.getElementById('allPokemon').style.display = 'none';
 });
 
 // TODA LA DATA PINTADA
