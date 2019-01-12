@@ -11,143 +11,165 @@
 <body>
     <header>
         <div class="container">
-            <h1 class="icon-pokedex"> ¡Pokedéx Go! </h1>
+            <h1 class="icon-pokedex"> Pokedex Go </h1>
             <input type="checkbox" id="menu-bar">
             <label class="icon-menu" for="menu-bar"></label>
             <nav class="menu">
-             <a href="#" id="Inicio"> <img src="img/pokeball-icon.png" alt="icono-pokeball-menu">INICIO</a>
-             <a href="#" id="Noticias"> <img src="img/folded-newspaper.png" alt="icono-noticias-menu">NOTICIAS</a>
-             <a href="#" id="Pokédex"> <img src="img/pokedex.png" alt="icono-pokedex-menu">POKÉDEX</a>
-             <a href="#" id="HuevosKm"> <img src="img/egg-outline.png" alt="icono-huevo-menu">HUEVOS KM</a>
-             <a href="#" id="Debilidades"> <img src="img/pokemon-go.png" alt="icono-debilidades-menu">DEBILIDADES</a>
+             <a href="#" id="main-menu"> <img src="img/pokeball-icon.png" alt="icon-main-menu">INICIO</a>
+             <a href="#" id="pokedex-menu"> <img src="img/pokedex.png" alt="icon-pokedex-menu">POKÉDEX</a>
+             <a href="#" id="egg-menu"> <img src="img/egg-outline.png" alt="icon-egg-menu">HUEVOS KM</a>
+             <a href="#" id="weak-menu"> <img src="img/pokemon-go.png" alt="icono-weak-menu">DEBILIDADES</a>
+             <a href="#" id="type-menu"> <img src="img/type-menu"  alt="icono-type-menu">TIPOS</a>
+             <a href="#" id="news-menu"> <img src="img/folded-newspaper.png" alt="icon-news-menu">NOTICIAS</a>
             </nav>
         </div>
     </header>
     <main>
         <section id="banner-001">
-            <img alt="banner-inicio-pokemon" src="img/banner-001.jpg">
-            <!-- <video width="100%" preload="auto" autoplay loop muted >
-             <source src="img/FONDO POKEMON.mp4" type="video/mp4">
-            </video> -->
+            <video width="60%" preload="auto" autoplay loop muted >
+             <source src="img/FONDO-POKEMON.mp4" type="video/mp4">
+            </video>
 
             <div class="container">
-            <h2>Es momento de convertirse en un Maestro Pokémon</h2>
-            <p>Filtra la información de tus Pokémon por Tipos, debilidades, kilometraje por huevos y más</p>
-            <a href="#">Busca por nombre a tu Pokémon</a>
+                <h2>Es momento de convertirse en un Maestro Pokémon</h2>
+                <p>Filtra la información de tus Pokémon por Tipos, debilidades, kilometraje por huevos y más</p>
             </div>
         </section>
-    </main>
-    <!-- SECCION INTRODUCCION Y EXPLICACION DE LOS FILTRADOS -->
-    <section id = "introduccion">
-        <h2>Escoge tu filtro</h2>
-        <div class="container">
-            <div class="info-filtrado">
-                <img src="img/Capa-0.png" alt="icono-pokedex">
-                <h4>Pokedéx</h4>
-                <p>Lista de los 151 pokémon</p>
+     <!-- SECCION introduction Y EXPLICACION DE LOS FILTRADOS -->
+        <section id = "introduction">
+         <h2>Escoge tu filtro</h2>
+            <div class="container">
+                <div class="info-filter">
+                    <img src="img/Capa-0.png" alt="icon-pokedex">
+                    <h4>Pokédex</h4>
+                    <p>Lista de los 151 pokémon</p>
+                </div>
+                <div class="info-filter">
+                    <img src="img/mystic.png" alt="icon-type">
+                    <h4>Tipos</h4>
+                    <p>Filtra por tipo de Pokémon</p>
+                </div>
+                <div class="info-filter">
+                    <img src="img/instinct(2).png" alt="icon-weak">
+                    <h4>Debilidades</h4>
+                    <p>Filtra por debilides a que tipo</p>
+                </div>
+                <div class="info-filter">
+                    <img src="img/Capa-1.png" alt="icon-candy">
+                    <h4>Caramelos</h4>
+                    <p>potenciador de combate</p>
+                </div>
+                <div class="info-filter">
+                    <img src="img/egg.png" alt="icon-egg">
+                    <h4>Huevos</h4>
+                    <p>eclosiona un pokémon</p>
+                </div>
             </div>
-            <div class="info-filtrado">
-                <img src="img/mystic.png" alt="icono-tipos">
-                <h4>Tipos</h4>
-                <p>Filtra por tipo de Pokémon</p>
-            </div>
-            <div class="info-filtrado">
-                <img src="img/instinct(2).png" alt="icono-debilidades">
-                <h4>Debilidades</h4>
-                <p>Filtra por debilides a que tipo</p>
-            </div>
-            <div class="info-filtrado">
-                <img src="img/Capa-1.png" alt="icono-caramelos">
-                <h4>Caramelos</h4>
-                <p>potenciador de combate</p>
-            </div>
-            <div class="info-filtrado">
-                <img src="img/egg.png" alt="icono-huevos">
-                <h4>Huevos</h4>
-                <p>eclosiona un pokémon</p>
-            </div>
-        </div>
         </section>
-<!--SECCION ULTIMAS NOCTICIAS -->
-    <section id="noticias">
+     <!--SECCION ULTIMAS NOCTICIAS -->
+     <section id="news">
             <h3> Noticias</h3>
             <div class="container">
                <article>
-                   <img src="img/img-not-001.jpg" alt="nuevo-año-huevo-km">
+                   <img src="img/img-not-001.jpg" alt="news-egg">
                    <h4>¡NUEVO AÑO, NUEVOS RETOS!</h4>
                    <p>Empieza el nuevo año con el Eclosionatón de la función Sincroaventura</p>
                </article>
                <article>
-                    <img src="img/img-not-004.jpg" alt= "zona-safari-brasil">
+                    <img src="img/img-not-004.jpg" alt= "news-brasil">
                     <h4>¡ÚNETE A LA ZONA SAFARI!</h4>
                     <p>Evento de Pokémon GO en Porto Alegre, Brasil! </p>
                 </article>
                 <article>
-                    <img src="img/img-not-003.jpg" alt="nuevo-legendario">
+                    <img src="img/img-not-003.jpg" alt="news-legendary">
                     <h4>Te aguarda un nuevo año legendario</h4>
                     <p>mocionantes oportunidades de conseguir logros de investigación </p>
                     </article>
             </div>
-        </section>
+          </section>
+      </div>
+    </main>
 
-  <form class= "general" id ="generalselector">
-      <select class="lista" id = "opcionesTipoDebilidades">
-        <option value = "Tipos">Escoge la Debilidad</option>
-        <option value = "Electric">Electrico</option>
-        <option value = "Grass">Planta</option>
-        <option value = "Psychic">Psiquico</option>
-        <option value = "Poison">Veneno</option>
-        <option value = "Flying">Volador</option>
-        <option value = "Water">Agua</option>
-        <option value = "Bug">Bicho</option>
-        <option value = "Normal">Normal</option>
-        <option value = "Ground">Tierra</option>
-        <option value = "Fighting">Lucha</option>
-        <option value = "Rock">Roca</option>
-        <option value = "Ice">Hielo</option>
-        <option value ="Ghost">Fantasma</option>
-        <option value ="Dragon">Dragon</option>
-        <option value ="Fire">Fuego</option>
-        </select>
-      
-      <select class="lista" id = "opcionesTipo">
-        <option value = "Tipos">Escoge el tipo</option>
-        <option value = "Electric">Electrico</option>
-        <option value = "Grass">Planta</option>
-        <option value = "Psychic">Psiquico</option>
-        <option value = "Poison">Veneno</option>
-        <option value = "Flying">Volador</option>
-        <option value = "Water">Agua</option>
-        <option value = "Bug">Bicho</option>
-        <option value = "Normal">Normal</option>
-        <option value = "Ground">Tierra</option>
-        <option value = "Fighting">Lucha</option>
-        <option value = "Rock">Roca</option>
-        <option value = "Ice">Hielo</option>
-        <option value ="Ghost">Fantasma</option>
-        <option value ="Dragon">Dragon</option>
-        <option value ="Fire">Fuego</option>
-      </select>
+    <section class="screen-weak" id= "screen-weak">
+        <form class="select-general">
+            <select class="lista" id = "opcionesTipoDebilidades">
+                <option value = "Tipos">Escoge la Debilidad</option>
+                <option value = "Electric">Electrico</option>
+                <option value = "Grass">Planta</option>
+                <option value = "Psychic">Psiquico</option>
+                <option value = "Poison">Veneno</option>
+                <option value = "Flying">Volador</option>
+                <option value = "Water">Agua</option>
+                <option value = "Bug">Bicho</option>
+                <option value = "Normal">Normal</option>
+                <option value = "Ground">Tierra</option>
+                <option value = "Fighting">Lucha</option>
+                <option value = "Rock">Roca</option>
+                <option value = "Ice">Hielo</option>
+                <option value ="Ghost">Fantasma</option>
+                <option value ="Dragon">Dragon</option>
+                <option value ="Fire">Fuego</option>
+            </select>
+        </form>
+    </section>
 
-      <select class="lista" id = "opcionesKm">
-        <option value ="2 km">2 km</option>
-        <option value ="5 km">5 km</option>
-        <option value ="10 km">10 km</option>
-        </select>
+    <section class="screen-type" id="screen-type">
+        <form class="select-general">
+            <select class="lista" id = "opcionesTipo">
+                <option value = "Tipos">Escoge el tipo</option>
+                <option value = "Electric">Electrico</option>
+                <option value = "Grass">Planta</option>
+                <option value = "Psychic">Psiquico</option>
+                <option value = "Poison">Veneno</option>
+                <option value = "Flying">Volador</option>
+                <option value = "Water">Agua</option>
+                <option value = "Bug">Bicho</option>
+                <option value = "Normal">Normal</option>
+                <option value = "Ground">Tierra</option>
+                <option value = "Fighting">Lucha</option>
+                <option value = "Rock">Roca</option>
+                <option value = "Ice">Hielo</option>
+                <option value ="Ghost">Fantasma</option>
+                <option value ="Dragon">Dragon</option>
+                <option value ="Fire">Fuego</option>
+            </select>
+        </form>
+    </section>
+
+    <section class = "screen-egg" id = "screen-egg">
+        <form class="select-general">
+            <select class = "lista" id = "opcionesKm">
+                <option value ="2 km">2 km</option>
+                <option value ="5 km">5 km</option>
+                <option value ="10 km">10 km</option>
+            </select>
+        </form>
+    </section>
           
-      <select class="lista" id = "opcionesOrdenar">
-        <option value ="ascendente">A - Z</option>
-        <option value ="descendente">Z - A</option>
-        </select>
-       
-    </form>
+    <section class="screen-sort" id = "screen-sort">
+        <form class="select-general">
+            <select class="lista" id = "opcionesOrdenar">
+                <option value ="ascendente">A - Z</option>
+                <option value ="descendente">Z - A</option>
+            </select>
+        </form>
+    </section>
 
-   <div id="allPokemon" class ="POKEMON"></div>
+
+    <section class ="screen-pokedex" id ="screen-pokedex">
+        <form class="select-general"></form>
+    </section>
+
+    <section class ="screen-news" id ="screen-news">
+            <form class="select-general"></form>
+    </section>
+
+    <section class ="POKEMON" id ="allPokemon"></section>
 <!-- CREANDO ICONOS PARA IR A LAS REDES SOCIALES -->
     <footer>
         <div class="container">
             <p class="copyright"> Pokédex Go &copy; 2019</p>
-            <div class="redes-sociales">
+            <div class="social-media">
                 <a class="icon-facebook" href="https://www.facebook.com/pokedexGoPeru"></a>
                 <a class="icon-twitter" href="#"></a>
                 <a class="icon-instagram" href="#"></a>
