@@ -24,7 +24,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main id="main">
         <section id="banner-001">
             <video width="60%" preload="auto" autoplay loop muted >
              <source src="img/FONDO-POKEMON.mp4" type="video/mp4">
@@ -86,14 +86,34 @@
                     <p>mocionantes oportunidades de conseguir logros de investigación </p>
                     </article>
             </div>
-          </section>
-      </div>
+        </section>
     </main>
 
-    <section class="screen-weak" id= "screen-weak">
+    <section class="screen-weak" id= "screen-weak" style="display:none">
+            <select class="lista" id = "option-weak">
+                <option value = "Tipos">Filtrar por Pokémon debiles a...</option>
+                <option value = "Electric">Electrico</option>
+                <option value = "Grass">Planta</option>
+                <option value = "Psychic">Psiquico</option>
+                <option value = "Poison">Veneno</option>
+                <option value = "Flying">Volador</option>
+                <option value = "Water">Agua</option>
+                <option value = "Bug">Bicho</option>
+                <option value = "Normal">Normal</option>
+                <option value = "Ground">Tierra</option>
+                <option value = "Fighting">Lucha</option>
+                <option value = "Rock">Roca</option>
+                <option value = "Ice">Hielo</option>
+                <option value ="Ghost">Fantasma</option>
+                <option value ="Dragon">Dragon</option>
+                <option value ="Fire">Fuego</option>
+            </select>
+    </section>
+
+    <section class="screen-type" id="screen-type" style="display:none">
         <form class="select-general">
-            <select class="lista" id = "opcionesTipoDebilidades">
-                <option value = "Tipos">Escoge la Debilidad</option>
+            <select class="lista" id = "option-type">
+                <option value = "Tipos">Filtrar por tipo de Pokémon...</option>
                 <option value = "Electric">Electrico</option>
                 <option value = "Grass">Planta</option>
                 <option value = "Psychic">Psiquico</option>
@@ -113,32 +133,10 @@
         </form>
     </section>
 
-    <section class="screen-type" id="screen-type">
+    <section class = "screen-egg" id = "screen-egg" style="display:none">
         <form class="select-general">
-            <select class="lista" id = "opcionesTipo">
-                <option value = "Tipos">Escoge el tipo</option>
-                <option value = "Electric">Electrico</option>
-                <option value = "Grass">Planta</option>
-                <option value = "Psychic">Psiquico</option>
-                <option value = "Poison">Veneno</option>
-                <option value = "Flying">Volador</option>
-                <option value = "Water">Agua</option>
-                <option value = "Bug">Bicho</option>
-                <option value = "Normal">Normal</option>
-                <option value = "Ground">Tierra</option>
-                <option value = "Fighting">Lucha</option>
-                <option value = "Rock">Roca</option>
-                <option value = "Ice">Hielo</option>
-                <option value ="Ghost">Fantasma</option>
-                <option value ="Dragon">Dragon</option>
-                <option value ="Fire">Fuego</option>
-            </select>
-        </form>
-    </section>
-
-    <section class = "screen-egg" id = "screen-egg">
-        <form class="select-general">
-            <select class = "lista" id = "opcionesKm">
+            <select class = "lista" id = "option-egg">
+                <option value ="huevos">Pokémon por huevos de ...</option>
                 <option value ="2 km">2 km</option>
                 <option value ="5 km">5 km</option>
                 <option value ="10 km">10 km</option>
@@ -146,9 +144,10 @@
         </form>
     </section>
           
-    <section class="screen-sort" id = "screen-sort">
+    <section class="screen-sort" id = "screen-sort" style="display:none">
         <form class="select-general">
-            <select class="lista" id = "opcionesOrdenar">
+            <select class="lista" id = "option-sort">
+                <option value ="ordernar">Ordenar...</option>
                 <option value ="ascendente">A - Z</option>
                 <option value ="descendente">Z - A</option>
             </select>
@@ -156,15 +155,16 @@
     </section>
 
 
-    <section class ="screen-pokedex" id ="screen-pokedex">
+    <section class ="screen-pokedex" id ="screen-pokedex" style="display:none">
         <form class="select-general"></form>
     </section>
 
-    <section class ="screen-news" id ="screen-news">
-            <form class="select-general"></form>
+    <section class ="screen-news" id ="screen-news" style="display:none">
+        <div class ="screen-news" id ="screen-news-div"></div>
     </section>
 
-    <section class ="POKEMON" id ="allPokemon"></section>
+    <section class ="POKEMON" id ="allPokemon" style="display:none">
+    </section>
 <!-- CREANDO ICONOS PARA IR A LAS REDES SOCIALES -->
     <footer>
         <div class="container">
