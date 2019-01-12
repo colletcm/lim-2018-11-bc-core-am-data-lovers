@@ -61,20 +61,14 @@ const ordenarAlfabeticamente = (data, ordenarPor) => {
 };
 
 // Contar Caramelos 
-const filtradoDeCaramelos = (data, numeroElegido) => {
-  const copyData = [];
-  for (let i = 0; i < data.length; i++) {
-    copyData.push(Object.assign({}, {
-      name: data[i].name, candyCount: data[i].candy_count
-    }));
-  }
-  let resultadoDeCaramelos = copyData.filter(copyData => (copyData.candyCount <= 400));
-  resultadoDeCaramelos = copyData.filter((evolucionPokemon) => {
-    return evolucionPokemon.candyCount === numeroElegido;
+const filtradoDeCaramelos = (data) => {
+  let pokemonConEvolucion = data.filter((pokemon) => {
+    return pokemon.hasOwnProperty('candy_count');
   });
-  return resultadoDeCaramelos;
+  // aca faltan hacer el calculo en base a los numeros
+  let porcentajeCandy = (pokemonConEvolucion.length) / 151 * 100;
+  return porcentajeCandy;
 };
-
 
 window.dataPokemon = {
   filtradoKm,

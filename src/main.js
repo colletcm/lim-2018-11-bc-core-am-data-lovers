@@ -4,17 +4,73 @@ const optionWeak = document.getElementById('opcionesTipoDebilidades');
 const optionType = document.getElementById('opcionesTipo');
 const optionEgg = document.getElementById('opcionesKm');
 const optionAsc = document.getElementById('opcionesOrdenar');
-// const botones = document.getElementById('botones');
-// const inicio = document.getElementById('inicio');
-// const pokedex = document.getElementById('pokedex');
-// const debilidades = document.getElementById('debilidades');
-// const huevos = document.getElementById('huevos');
-// const generalSelector = document.getElementById('generalselector').style = 'display:none';
 
-// const ventana = () => {
-//   document.getElementById('generalselector').style = 'display:block';
-// };
-// pokedex.addEventListener('click', ventana); 
+const mainMenu = document.getElementById('main-menu');
+mainMenu.addEventListener('click', () => {
+  document.getElementById('main-screen').style.display = 'block';
+  document.getElementById('screen-pokedex').style.display = 'none';
+  document.getElementById('screen-sort').style.display = 'none';
+  document.getElementById('screen-egg').style.display = 'none';
+  document.getElementById('screen-weak').style.display = 'none';
+  document.getElementById('screen-type').style.display = 'none';
+  document.getElementById('screen-news').style.display = 'none';
+});
+
+
+const mainPokedex = document.getElementById('pokedex-menu');
+mainPokedex.addEventListener('click', () => {
+  document.getElementById('main-screen').style.display = 'none';
+  document.getElementById('screen-pokedex').style.display = 'block';
+  document.getElementById('opcionesOrdenar').style.display = 'block';
+  document.getElementById('screen-egg').style.display = 'none';
+  document.getElementById('screen-weak').style.display = 'none';
+  document.getElementById('screen-type').style.display = 'none';
+  document.getElementById('screen-news').style.display = 'none';
+});
+
+const mainEgg = document.getElementById('egg-menu');
+mainEgg.addEventListener('click', () => {
+  document.getElementById('main-screen').style.display = 'none';
+  document.getElementById('screen-pokedex').style.display = 'none';
+  document.getElementById('screen-sort').style.display = 'none';
+  document.getElementById('screen-egg').style.display = 'block';
+  document.getElementById('screen-weak').style.display = 'none';
+  document.getElementById('screen-type').style.display = 'none';
+  document.getElementById('screen-news').style.display = 'none';
+});
+
+const mainWeak = document.getElementById('weak-menu');
+mainWeak.addEventListener('click', () => {
+  document.getElementById('main-screen').style.display = 'none';
+  document.getElementById('screen-pokedex').style.display = 'none';
+  document.getElementById('screen-sort').style.display = 'none';
+  document.getElementById('screen-egg').style.display = 'none';
+  document.getElementById('screen-weak').style.display = 'block';
+  document.getElementById('screen-type').style.display = 'none';
+  document.getElementById('screen-news').style.display = 'none';
+});
+
+const mainType = document.getElementById('type-menu');
+mainType.addEventListener('click', () => {
+  document.getElementById('main-screen').style.display = 'none';
+  document.getElementById('screen-pokedex').style.display = 'none';
+  document.getElementById('screen-sort').style.display = 'none';
+  document.getElementById('screen-egg').style.display = 'none';
+  document.getElementById('screen-weak').style.display = 'none';
+  document.getElementById('screen-type').style.display = 'block';
+  document.getElementById('screen-news').style.display = 'none';
+});
+
+const mainNews = document.getElementById('news-menu');
+mainNews.addEventListener('click', () => {
+  document.getElementById('main-screen').style.display = 'none';
+  document.getElementById('screen-pokedex').style.display = 'none';
+  document.getElementById('screen-sort').style.display = 'none';
+  document.getElementById('screen-egg').style.display = 'none';
+  document.getElementById('screen-weak').style.display = 'none';
+  document.getElementById('screen-type').style.display = 'none';
+  document.getElementById('screen-news').style.display = 'block';
+});
 
 // TODA LA DATA PINTADA
 const completeList = (data) => {
