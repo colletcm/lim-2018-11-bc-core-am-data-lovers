@@ -1,37 +1,35 @@
 body {
     background-image: url(img/fondo-degradado.png);
+    background-size: cover;
 }
-
 .list { 
     /* Nombre  */
-  color: #3e3e3e;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 19px; 
+  font-size: 19px;
+  color: #3e3e3e; 
 }
 .numero {
     /* Numero en la pokedex */
-    color: #b5b5b5;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
+    color: #b5b5b5;
     text-align: center;
 }
 .imagen {
     width: 100px;
     height:100px;
 }
-
 .blog-card {
-    background: #fff;
+    background: rgb(253, 253, 251);
     box-shadow: 0 0.1875rem 1.5rem rgba(0, 0, 0, 0.2);
     border-radius: 0.375rem;
     display: inline-table; /*hace que nuestras etiquetas sea una al costado de otra */
-    border: none;
     float: left; /* Especifica como debe flotar un elemento*/
     word-wrap: break-word; /*Hace que el texto no se salga del cuadro */
     line-height: 10px; 
-    width: 150px;
+    width: 180px;
     padding: 20px;
     height: 150px;
-    margin: 2%;
-    flex-direction:row; /* hace que los los elementos flexibles vayan para una direccion*/
+    margin: 1.5%;
+    text-align: center;
 }
