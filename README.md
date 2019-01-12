@@ -35,8 +35,8 @@ Entonces acordamos que nuestra Definición de Terminado implica:
 
 ## Prototipo de baja fidelidad
 
-Es un bosquejo que compila a grandes rasgos todas las sugerencias brindadas por nuestros usuarios en base a sus espectivas sobre nuestra Website, considerando los botones de filtrado, dónde las ubicaríamos hasta qué mostrarían al darle CLICK.
-![image](https://user-images.githubusercontent.com/45071312/51038096-37f04080-1580-11e9-9899-21d37c5b4293.png)
+Es un bosquejo que compila a grandes rasgos todas las sugerencias brindadas por nuestros usuarios en base a sus espectivas sobre nuestra Website, considerando los botones de filtrado, dónde las ubicaríamos hasta qué mostrarían al darle CLICK.   
+![giphy a y c](https://user-images.githubusercontent.com/45071312/51076722-22574580-166a-11e9-95c1-b2129b538edc.gif)
 
 ## Prototipo de Alta Fidelidad
 Usando [Adobe] y [Zeplin]https://zpl.io/adr9Bm7 el primer prototipo obtuvo color y vida.  
