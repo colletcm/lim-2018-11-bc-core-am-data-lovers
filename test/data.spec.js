@@ -547,6 +547,8 @@ const testAllPokemon6 = [{
   }]
 }];
 
+const testAllPokemon7 = 2.6490066225165565;
+
 describe('dataPokemon', () => {
   it('deberia ser un objeto', () => {
     expect(typeof dataPokemon).toBe('object');
@@ -584,6 +586,14 @@ describe('dataPokemon', () => {
     });
     it('deberia filtrarme por Ordenar de Z-A', () => {
       expect(dataPokemon.ordenarAlfabeticamente(testAllPokemon, 'descendente')).toEqual(testAllPokemon6);
+    });
+  });
+  describe('dataPokemon.filtradoDeCaramelos', () => {
+    it('deberia ser una funcion de filtrar porcentaje de Evolucion con caramelos', () => {
+      expect(typeof dataPokemon.filtradoDeCaramelos).toBe('function');
+    });
+    it('deberia sacar el porcentaje de candy en base a los 151 pokémon', () => {
+      expect(dataPokemon.filtradoDeCaramelos(testAllPokemon)).toEqual(testAllPokemon7);
     });
   });
 });
