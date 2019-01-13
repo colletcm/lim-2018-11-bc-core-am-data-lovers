@@ -45,7 +45,13 @@ const filtradoDebilidades = (data, weaknesses) => {
 
 // FILTRADO DE A-Z Z-A
 const ordenarAlfabeticamente = (data, ordenarPor) => {
-  const ordenarAscendente = data.sort((element1, element2) => {
+  const copyData = [];
+  for (let i = 0; i < data.length; i++) {
+    copyData.push(Object.assign({}, {
+      name: data[i].name, num: data[i].num, weaknesses: data[i].weaknesses, type: data[i].type, img: data[i].img
+    }));
+  }
+  const ordenarAscendente = copyData.sort((element1, element2) => {
     if (element1.name > element2.name) {
       return 1;
     } else {
