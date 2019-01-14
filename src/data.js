@@ -51,6 +51,11 @@ const ordenarAlfabeticamente = (data, ordenarPor) => {
       name: data[i].name, num: data[i].num, weaknesses: data[i].weaknesses, type: data[i].type, img: data[i].img
     }));
   }
+  
+  if (ordenarPor === 'ordernarnumero'){
+    return copyData
+  }
+
   const ordenarAscendente = copyData.sort((element1, element2) => {
     if (element1.name > element2.name) {
       return 1;
@@ -63,7 +68,8 @@ const ordenarAlfabeticamente = (data, ordenarPor) => {
     return ordenarAscendente;
   } else {
     return ordenarAscendente.reverse();
-  }
+  };
+  
 };
 
 // Contar Caramelos 
