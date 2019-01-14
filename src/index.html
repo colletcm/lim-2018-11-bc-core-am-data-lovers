@@ -27,18 +27,19 @@
         </div>
     </header>
     <main id="main">
-        <section id="banner-001">
-            <video width="60%" preload="auto" autoplay loop muted >
-             <source src="img/FONDO-POKEMON.mp4" type="video/mp4">
-            </video>
-
-            <div class="container">
-                <h2>Es momento de convertirse en un Maestro Pokémon</h2>
-                <p>Filtra la información de tus Pokémon por Tipos, debilidades, kilometraje por huevos y más</p>
+        <section>
+            <div class="banner"> 
+                <video width="100%" preload="auto" autoplay loop muted >
+                <source src="img/FONDO-POKEMON.mp4" type="video/mp4">
+                </video>
+                <div class="container-banner">
+                        <h2 class="banner-title">Es momento de convertirse en un Maestro Pokémon</h2>
+                        <p class="banner-txt">Filtra la información de tus Pokémon por Tipos, debilidades, kilometraje por huevos y más</p>
+                </div>
             </div>
         </section>
      <!-- SECCION introduction Y EXPLICACION DE LOS FILTRADOS -->
-        <section id = "introduction">
+        <section id = "introduction" class= "introduction">
          <h2>Escoge tu filtro</h2>
             <div class="container">
                 <div class="info-filter">
@@ -69,25 +70,33 @@
             </div>
         </section>
      <!--SECCION ULTIMAS NOCTICIAS -->
-     <section id="news">
-            <h3> Noticias</h3>
+        <section id="news" class= "news">
             <div class="container">
-               <article>
-                   <img src="img/img-not-001.jpg" alt="news-egg">
-                   <h4>¡NUEVO AÑO, NUEVOS RETOS!</h4>
-                   <p>Empieza el nuevo año con el Eclosionatón de la función Sincroaventura</p>
-               </article>
-               <article>
-                    <img src="img/img-not-004.jpg" alt= "news-brasil">
-                    <h4>¡ÚNETE A LA ZONA SAFARI!</h4>
-                    <p>Evento de Pokémon GO en Porto Alegre, Brasil! </p>
-                </article>
-                <article>
-                    <img src="img/img-not-003.jpg" alt="news-legendary">
-                    <h4>Te aguarda un nuevo año legendario</h4>
-                    <p>mocionantes oportunidades de conseguir logros de investigación </p>
+                <h3 class="title-news"> Noticias</h3>
+                <div class="container">
+                    <article class="news-poke">
+                        <img src="img/img-not-001.jpg" alt="news-egg">
+                            <div class="news-descriptions">
+                                <h4>¡NUEVO AÑO, NUEVOS RETOS!</h4>
+                                <p>Empieza el nuevo año con el Eclosionatón de la función Sincroaventura</p>
+                            </div>
                     </article>
-            </div>
+                    <article class="news-poke">
+                        <img src="img/img-not-004.jpg" alt= "news-brasil">
+                            <div class="news-descriptions">
+                                <h4>¡ÚNETE A LA ZONA SAFARI!</h4>
+                                <p>Evento de Pokémon GO en Porto Alegre, Brasil! </p>
+                            </div>
+                    </article>
+                    <article class="news-poke">
+                        <img src="img/img-not-003.jpg" alt="news-legendary">
+                            <div class="news-descriptions">
+                                <h4>Te aguarda un nuevo año legendario</h4>
+                                <p>Emocionantes oportunidades de conseguir logros de investigación </p>
+                            </div>
+                    </article>
+                </div>
+            </div> 
         </section>
     </main>
 
@@ -168,7 +177,7 @@
     <section class ="POKEMON" id ="allPokemon" style="display:none">
     </section>
 <!-- CREANDO ICONOS PARA IR A LAS REDES SOCIALES -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <p class="copyright"> Pokédex Go &copy; 2019</p>
             <div class="social-media">
