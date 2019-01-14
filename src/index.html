@@ -11,16 +11,18 @@
 <body>
     <header>
         <div class="container">
-            <h1 class="icon-pokedex"> Pokedex Go </h1>
-            <input type="checkbox" id="menu-bar">
+            <input type="checkbox" id="menu-bar" class="menu-bar">
+            <!-- el label es para cuando haces click al checkbock, tambien se active al hacerle click en el label -->
             <label class="icon-menu" for="menu-bar"></label>
             <nav class="menu">
-             <a href="#" id="main-menu"> <img src="img/pokeball-icon.png" alt="icon-main-menu">INICIO</a>
-             <a href="#" id="pokedex-menu"> <img src="img/pokedex.png" alt="icon-pokedex-menu">POKÉDEX</a>
-             <a href="#" id="egg-menu"> <img src="img/egg-outline.png" alt="icon-egg-menu">HUEVOS KM</a>
-             <a href="#" id="weak-menu"> <img src="img/pokemon-go.png" alt="icono-weak-menu">DEBILIDADES</a>
-             <a href="#" id="type-menu"> <img src="img/type-menu"  alt="icono-type-menu">TIPOS</a>
-             <a href="#" id="news-menu"> <img src="img/folded-newspaper.png" alt="icon-news-menu">NOTICIAS</a>
+            <ul>
+                <li><a href="#" id="main-menu"> <img src="img/pokeball-icon.png" alt="icon-main-menu">   INICIO</a></li>
+                <li><a href="#" id="pokedex-menu"> <img src="img/pokedex.png" alt="icon-pokedex-menu">   POKÉDEX</a></li>
+                <li><a href="#" id="egg-menu"> <img src="img/egg-outline.png" alt="icon-egg-menu">   HUEVOS KM</a></li>
+                <li><a href="#" id="weak-menu"> <img src="img/pokemon-go.png" alt="icono-weak-menu">   DEBILIDADES</a></li>
+                <li><a href="#" id="type-menu"> <img src="img/type.png"  alt="icono-type-menu">   TIPOS</a></li>
+                <li><a href="#" id="news-menu"> <img src="img/folded-newspaper.png" alt="icon-news-menu">   NOTICIAS</a></li>
+            </ul>
             </nav>
         </div>
     </header>
@@ -147,7 +149,7 @@
     <section class="screen-sort" id = "screen-sort" style="display:none">
         <form class="select-general">
             <select class="lista" id = "option-sort">
-                <option value ="ordernar">Ordenar...</option>
+                <option value ="ordernarnumero">Ordenar...</option>
                 <option value ="ascendente">A - Z</option>
                 <option value ="descendente">Z - A</option>
             </select>
@@ -171,9 +173,9 @@
             <p class="copyright"> Pokédex Go &copy; 2019</p>
             <div class="social-media">
                 <a class="icon-facebook" href="https://www.facebook.com/pokedexGoPeru"></a>
-                <a class="icon-twitter" href="#"></a>
-                <a class="icon-instagram" href="#"></a>
-                <a class="icon-twitch" href="#"></a>
+                <a class="icon-twitter" href="https://twitter.com/PokedexGo1"></a>
+                <a class="icon-instagram" href="https://www.instagram.com/pokedexgolatam/"></a>
+                <a class="icon-twitch" href="https://www.twitch.tv/pokedexgolatam"></a>
             </div>
         </div>
     </footer>

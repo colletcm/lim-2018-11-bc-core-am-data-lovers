@@ -1,16 +1,24 @@
 
-![Image 001 README](https://66.media.tumblr.com/facd6b9fbc2cd6152d88e6304888c309/tumblr_pl0aaj5Ifj1qefzxxo1_1280.png)![Image 002 README](https://66.media.tumblr.com/624097b8c182a2d3ec06e02b8853fc18/tumblr_pl0aaj5Ifj1qefzxxo2_r1_1280.png)
+# Pokédex Go
 
-## Definiendo nuestro usuario
+## Índice
+  - [Introducción](#introducción)
+  - [Inicio del Proyecto](#inicio-del-proyecto)
+  - [Historias de Usuario](#historias-de-usuario)
+  - [Herramientas](#herramientas)
+  - [Diseño de la Interfaz de Usuario](#diseño-de-la-interfaz-de-usuario)
+  - [Implementación de la Interfaz de Usuario](##implementación-de-la-interfaz-de-usuario-(html/css/js))
+  - [Mejoras del Proyecto](#errores-&-mejoras) 
+  - [Créditos](#image-001-readme)
 
-Luego de entrevistar a distintos jugadores y contrastar los resultados de aquellas primeras entrevistas con la información para nuestro proyecto (DATA) pudimos determinar :  
+## Introducción ##
+![Image 001 README](https://66.media.tumblr.com/facd6b9fbc2cd6152d88e6304888c309/tumblr_pl0aaj5Ifj1qefzxxo1_1280.png)
+## Inicio del Proyecto  ##
+![Image 002 README](https://66.media.tumblr.com/624097b8c182a2d3ec06e02b8853fc18/tumblr_pl0aaj5Ifj1qefzxxo2_r1_1280.png)
 
-1. Que los distintos jugadores se dividen en 2 categorías: principiantes y experimentados.  
-2. Que nuestra Data (con tan sólo de 151 pokémon) no satisfacía las necesidades de los jugadores experimentados, dado que ellos tenían solicitudes más amplias, como por ejemplo Calcular IVS.
-
-Motivo por el cual los jugadores principiantes serían nuestro público ideal y tratar de cubrir sus inquietudes era nuestro objetivo.
-
-Fue entonces que realizamos un segundo filtro con la intención de conseguir información más certera, ésta vez usamos una encuesta Online con opciones múltiples dirigida a juegadores.
+## Historias de Usuario ##
+![Image 003 README](https://66.media.tumblr.com/ae996564066c582f32062f389818de05/tumblr_pl0aaj5Ifj1qefzxxo3_r1_1280.png)
+![Image 004 README](https://66.media.tumblr.com/eede62a2559a6be02f4472041da7f413/tumblr_pl0aaj5Ifj1qefzxxo4_r1_1280.png)
 
 Gracias a dicha Encuesta Online conseguimos definir claramente cuáles eran nuestras Historias de Usuario, que finalmente resultaron ser cuatro:
 
@@ -19,6 +27,7 @@ Gracias a dicha Encuesta Online conseguimos definir claramente cuáles eran nues
 * Yo como usuario principiante de **Pokémon Go** quiero poder conocer qué pokémones podrían salir de los distintos tipos de huevos que hay en el juego.
 * Yo como usurio de **Pokémon Go** quisiera poder apreciar la lista completa de los pokémones ordenada de la A a la Z y de la Z a la A.
 
+## Herramientas ##
 Teniendo esas cuatro Historias, armamos el Tablero de tareas Scrum. Debíamos saber qué necesitabamos, cuáles eran nuestras prioridades y Por dónde empezar.
 
 Entonces acordamos que nuestra Definición de Terminado implica:
@@ -39,7 +48,7 @@ Es un bosquejo que compila a grandes rasgos todas las sugerencias brindadas por 
 ![giphy a y c](https://user-images.githubusercontent.com/45071312/51076722-22574580-166a-11e9-95c1-b2129b538edc.gif)
 
 ## Prototipo de Alta Fidelidad
-Usando [Adobe] y [Zeplin]https://zpl.io/adr9Bm7 el primer prototipo obtuvo color y vida.  
+Usando [Adobe] y [Zeplin] (https://zpl.io/adr9Bm7) el primer prototipo obtuvo color y vida.  
 Teníamos ya el primer vistazo real de nuestra futura creación en un video de corto listo para empezar a ser testeado al público.
 
 ## Testeos de usabilidad
@@ -59,3 +68,7 @@ Lo primordial fue entender la lógica para poder crear la estructura.
 Analizamos y desglosamos la Data hasta su raíz para poder manipularla.  
 
 Luego de haber realizado pruebas unitarias desde los ejemplos más sencillos. Logramos nuestro primer filtrado y de ahí en adelante el resto de funcionalidad, los test y manejo de teclas en main.js.
+
+## Errores & mejoras
+
+## Creditos
