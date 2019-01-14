@@ -120,11 +120,13 @@ main .banner {
     justify-content: center;
     display: inline-block;
 }
+
 #introduccion .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .info-filter img {
     width: 100%;
     max-width: 50px;
