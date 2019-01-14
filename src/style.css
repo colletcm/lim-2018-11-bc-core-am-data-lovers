@@ -115,7 +115,21 @@ main .banner {
 }
 
 /* ----------------- INTRODUCCION -----------------*/
-
+.info-filter {
+    margin: 20px;
+    justify-content: center;
+    display: inline-block;
+}
+#introduccion .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info-filter img {
+    width: 100%;
+    max-width: 50px;
+    position: center;
+}
 #news h3, h4 {
     text-align: center;
 }
