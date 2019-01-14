@@ -261,3 +261,28 @@ main .banner {
         margin: 0; /* activando y desactivando el checkbox */
     }
 }
+
+/* ----------------- CSS OCULTAR O MOSTRAR -----------------*/
+
+.screen-weak {
+    display:none;
+}
+
+.screen-type {
+    display:none;
+}
+.screen-egg {
+    display:none;
+}
+.screen-sort {
+    display:none;
+}
+.screen-pokedex{
+    display:none;
+}
+.screen-news{
+    display:none;
+}
+.pokemon{
+    display:none;
+}
