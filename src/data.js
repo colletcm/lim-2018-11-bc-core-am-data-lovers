@@ -48,7 +48,7 @@ const ordenarAlfabeticamente = (data, ordenarPor) => {
   const copyData = [];
   for (let i = 0; i < data.length; i++) {
     copyData.push(Object.assign({}, {
-      name: data[i].name, num: data[i].num, weaknesses: data[i].weaknesses, type: data[i].type, img: data[i].img
+      name: data[i].name, num: data[i].num, type: data[i].type, img: data[i].img
     }));
   }
 
