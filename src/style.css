@@ -1,6 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab);
+
 body {
     background-image: url(img/fondo-degradado.png);
     background-size: cover;
+    margin: 0;
+    text-align: center;
 }
 .list { 
     /* Nombre  */
@@ -32,4 +36,86 @@ body {
     height: 150px;
     margin: 1.5%;
     text-align: center;
+}
+
+/* HEADER BARRA RESPONSIVE Y BOTONES INTERACTIVOS */
+
+header {
+    width: 100%;
+    background: #1C1C1C;
+}
+
+.menu-bar {
+    display: none; /* ocultando el checkbox */
+}
+
+header label {
+    display: none; /* ocultando el icono de responsive*/
+    width: 50px;
+    height: 40px;
+    padding: 2px;
+    color: white;
+    border-right: 1px solid rgb(151, 151, 151);
+    font-size: 30px;
+    margin: 0 6px;
+
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(151, 151, 151, 0.5); /* el ultimo numero es la transparencia*/
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none; /* Quitando los puntos de lista*/
+    padding: 0; /* Quitar el relleno que tiene de lista al lado izq*/
+    display: flex; /* Flexbox hace que los li que esten dentro los coloque en una fila */ 
+    justify-content: flex-end;
+    margin-top: 0;
+}
+
+.menu li {
+    flex-grow: 1; /* Cada boton li, esta del mismo tamaño*/
+    text-align: center;
+    border: 1px solid rgba(151, 151, 151, 0.1);;
+}
+
+.menu li:hover {
+    cursor: pointer;
+    background: rgba(151, 151, 151, 0.8); /* el ultimo numero es la transparencia*/
+}
+.menu ul a {
+    display:  block;
+    padding:  15px 40px; /* Arriba y a los costados respectivamente*/
+    color: white;
+    text-decoration: none; /* Quitando la parte subrayadas*/
+}
+
+@media (max-width: 768px) { /* Responsive */
+    header label {
+        display: block;
+    }
+
+    .menu {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        position: absolute;
+        background: #1C1C1C;
+        width: 70%;
+        margin-left: -90%; /*Para que desaparezca la lista . se va a la  izq */
+        transition:  all 0.4s;
+    }
+
+    .menu ul {
+        flex-direction: column; /* Deja de ser fila para volverse columna*/
+    }
+
+    .menu li {
+        border-top:  1px solid  rgba(151, 151, 151, 0.4);;
+    }
+
+    .menu-bar:checked ~ .menu { /* llamando al imput */
+        margin: 0; /* activando y desactivando el checkbox */
+    }
 }
