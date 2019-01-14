@@ -47,9 +47,12 @@ Entonces acordamos que nuestra Definición de Terminado implica:
 Es un bosquejo que compila a grandes rasgos todas las sugerencias brindadas por nuestros usuarios en base a sus espectivas sobre nuestra Website, considerando los botones de filtrado, dónde las ubicaríamos hasta qué mostrarían al darle CLICK.   
 ![giphy a y c](https://user-images.githubusercontent.com/45071312/51076722-22574580-166a-11e9-95c1-b2129b538edc.gif)
 
+![giphy prototipo baja fidelidad](https://user-images.githubusercontent.com/45071312/51099982-e7582d80-17a1-11e9-84d4-9bf4bf84b28b.gif)
+
 ## Prototipo de Alta Fidelidad
 Usando [Adobe] y [Zeplin] (https://zpl.io/adr9Bm7) el primer prototipo obtuvo color y vida.  
 Teníamos ya el primer vistazo real de nuestra futura creación en un video de corto listo para empezar a ser testeado al público.
+![giphy pro alta fidelidad1](https://user-images.githubusercontent.com/45071312/51101774-17a3ca00-17aa-11e9-8128-672fdd9dc6e6.gif)
 
 ## Testeos de usabilidad
 
