@@ -3,7 +3,7 @@
 body {
     background-image: url(img/fondo-degradado.png);
     background-size: cover;
-    margin: 0;
+    margin: 0; /* El navegador por defecto tiene un margen, asi que hay que darle 0 */
     text-align: center;
 }
 .list { 
@@ -45,6 +45,10 @@ header {
     background: #1C1C1C;
 }
 
+.menu {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
 .menu-bar {
     display: none; /* ocultando el checkbox */
 }
@@ -92,7 +96,75 @@ header label:hover {
     text-decoration: none; /* Quitando la parte subrayadas*/
 }
 
-@media (max-width: 768px) { /* Responsive */
+/* ----------------- BANNER -----------------*/
+
+main .banner {
+    margin-top: 0px;/* este al tope*/
+    position: relative;
+    z-index: -1000; /* para que este atras*/
+}
+.container-banner {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    position: absolute;
+    top: 50%; /*Para centrar*/
+    left: 50%; /*Para centrar*/
+    transform: translateX(-50%) translateY(-50%); /* centrar y transladar encima del video*/
+    width: 100%;
+    color: white;
+}
+
+/* ----------------- INTRODUCCION -----------------*/
+
+/* ----------------- NOTICIAS -----------------*/
+.title-news {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: initial;
+    text-align: left;
+    font-size: 30px;
+    margin: 15px;
+}
+.news-poke {
+    position: relative;
+    margin-bottom: 30px;
+}
+.news-descriptions {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: initial;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    width: 40%;
+    height: 96%;
+    padding: 5px;
+
+}
+/* -----------------FOOTER----------------*/
+.footer {
+    background: #1C1C1C;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer [class^="icon-"] {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 2px;
+    width: 40px;
+    height: 40x;
+    line-height: 40px;
+  }
+
+
+/* -----------------RESPONSIVE-----------------*/
+
+
+@media (max-width: 768px) { /* Responsive de 768px*/
     header label {
         display: block;
     }
