@@ -94,16 +94,15 @@ const completeList = (data) => {
      <div class="card-link">
       <article class="blog-card">
        <div class="detalles">
-         <h1 class = "numero">${pokemonDataCopy.num}</h1>
+         <h1 class = "number">${pokemonDataCopy.num}</h1>
          <h2 class = "list"> ${pokemonDataCopy.name} </h2>
-         <h3><img class= "imagen" src=${pokemonDataCopy.img}></h3>
+         <h3><img class= "image" src=${pokemonDataCopy.img}></h3>
          <h4 class = "type">${pokemonDataCopy.type}</h4>
        </div>
      </article>
      </div>
     `;
-    paintAllData
- += card;
+    paintAllData += card;
   });
   resultallPokemon.innerHTML = paintAllData;
 };
@@ -135,5 +134,5 @@ optionSort.addEventListener('change', () => {
 });
 
 // INSERTAR TODA LA DATA DE CARAMELOS
-const resultadoCandy = dataPokemon.filterCandy(allPokemon);
-resultCandy.innerHTML = resultadoCandy.toFixed(0) + '%' ;
+const resultCandyData = dataPokemon.filterCandy(allPokemon);
+resultCandy.innerHTML = resultCandyData.toFixed(0) + '%' ;
