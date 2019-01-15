@@ -1,7 +1,7 @@
 // llamando a la Data y a todos los select
 const allPokemon = POKEMON.pokemon;
 const resultallPokemon = document.getElementById('all-pokemon');
-const resultCandy = document.getElementById('screen-news-div');
+const resultCandy = document.getElementById('result-candy-count');
 const optionWeak = document.getElementById('option-weak');
 const optionType = document.getElementById('option-type');
 const optionEgg = document.getElementById('option-egg');
@@ -11,6 +11,7 @@ const optionSort = document.getElementById('option-sort');
 const mainMenu = document.getElementById('main-menu');
 mainMenu.addEventListener('click', () => {
   document.getElementById('main').style.display = 'block';
+  document.getElementById('introduction').style.display = 'block';
   document.getElementById('screen-pokedex').style.display = 'none';
   document.getElementById('screen-sort').style.display = 'none';
   document.getElementById('screen-egg').style.display = 'none';
@@ -37,7 +38,6 @@ mainPokedex.addEventListener('click', () => {
 const mainEgg = document.getElementById('egg-menu');
 mainEgg.addEventListener('click', () => {
   document.getElementById('main').style.display = 'none';
-  document.getElementById('introduction').style.display = 'none';
   document.getElementById('screen-pokedex').style.display = 'none';
   document.getElementById('screen-sort').style.display = 'none';
   document.getElementById('screen-egg').style.display = 'block';
