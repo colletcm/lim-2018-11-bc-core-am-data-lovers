@@ -1,6 +1,6 @@
 // llamando a la Data y a todos los select
 const allPokemon = POKEMON.pokemon;
-const resultAllPokemon = document.getElementById('allPokemon');
+const resultallPokemon = document.getElementById('all-pokemon');
 const resultCandy = document.getElementById('screen-news-div');
 const optionWeak = document.getElementById('option-weak');
 const optionType = document.getElementById('option-type');
@@ -17,7 +17,7 @@ mainMenu.addEventListener('click', () => {
   document.getElementById('screen-weak').style.display = 'none';
   document.getElementById('screen-type').style.display = 'none';
   document.getElementById('screen-news').style.display = 'none';
-  document.getElementById('allPokemon').style.display = 'none';
+  document.getElementById('all-pokemon').style.display = 'none';
 });
 
 // Segunda Pantalla
@@ -30,7 +30,7 @@ mainPokedex.addEventListener('click', () => {
   document.getElementById('screen-weak').style.display = 'none';
   document.getElementById('screen-type').style.display = 'none';
   document.getElementById('screen-news').style.display = 'none';
-  document.getElementById('allPokemon').style.display = 'block';
+  document.getElementById('all-pokemon').style.display = 'block';
 });
 
 // Tercera Pantalla
@@ -44,7 +44,7 @@ mainEgg.addEventListener('click', () => {
   document.getElementById('screen-weak').style.display = 'none';
   document.getElementById('screen-type').style.display = 'none';
   document.getElementById('screen-news').style.display = 'none';
-  document.getElementById('allPokemon').style.display = 'block';
+  document.getElementById('all-pokemon').style.display = 'block';
 });
 
 // Cuarta Pantalla
@@ -57,7 +57,7 @@ mainWeak.addEventListener('click', () => {
   document.getElementById('screen-weak').style.display = 'block';
   document.getElementById('screen-type').style.display = 'none';
   document.getElementById('screen-news').style.display = 'none';
-  document.getElementById('allPokemon').style.display = 'block';
+  document.getElementById('all-pokemon').style.display = 'block';
 });
 
 // Quinta Pantalla
@@ -70,7 +70,7 @@ mainType.addEventListener('click', () => {
   document.getElementById('screen-weak').style.display = 'none';
   document.getElementById('screen-type').style.display = 'block';
   document.getElementById('screen-news').style.display = 'none';
-  document.getElementById('allPokemon').style.display = 'block';
+  document.getElementById('all-pokemon').style.display = 'block';
 });
 
 // Sexta Pantalla
@@ -83,14 +83,14 @@ mainNews.addEventListener('click', () => {
   document.getElementById('screen-weak').style.display = 'none';
   document.getElementById('screen-type').style.display = 'none';
   document.getElementById('screen-news').style.display = 'block';
-  document.getElementById('allPokemon').style.display = 'none';
+  document.getElementById('all-pokemon').style.display = 'none';
 });
 
 // TODA LA DATA PINTADA
 const completeList = (data) => {
-  let pintadoAllData = '';
+  let paintAllData = '';
   data.forEach((pokemonDataCopy) => {
-    const carta = `
+    const card = `
      <div class="card-link">
       <article class="blog-card">
        <div class="detalles">
@@ -102,37 +102,38 @@ const completeList = (data) => {
      </article>
      </div>
     `;
-    pintadoAllData += carta;
+    paintAllData
+ += card;
   });
-  resultAllPokemon.innerHTML = pintadoAllData;
+  resultallPokemon.innerHTML = paintAllData;
 };
 
 // FILTRANDO POR KM
 optionEgg.addEventListener('change', () => {
   const valueOptionEgg = optionEgg.value;
-  const functionFilter = dataPokemon.filtradoKm(allPokemon, valueOptionEgg);
+  const functionFilter = dataPokemon.filterKm(allPokemon, valueOptionEgg);
   completeList(functionFilter);
 });
 
 // FILTRADO POR DEBILIDADES
 optionWeak.addEventListener('change', () => {
   const valueOptionWeaknesses = optionWeak.value;
-  const functionFilterWeaknesses = dataPokemon.filtradoDebilidades(allPokemon, valueOptionWeaknesses);
+  const functionFilterWeaknesses = dataPokemon.filterWeaknesses(allPokemon, valueOptionWeaknesses);
   completeList(functionFilterWeaknesses);
 });
 
 // FILTRADO POR TIPO
 optionType.addEventListener('change', () => {
   const valueOptionType = optionType.value;
-  const functionFilterType = dataPokemon.filtradoTipos(allPokemon, valueOptionType);
+  const functionFilterType = dataPokemon.filterTypes(allPokemon, valueOptionType);
   completeList(functionFilterType);
 });
 
 // FILTRADO DE A-Z Z-A
 optionSort.addEventListener('change', () => {
-  completeList(dataPokemon.ordenarAlfabeticamente(allPokemon, optionSort.value));
+  completeList(dataPokemon. sortOrder(allPokemon, optionSort.value));
 });
 
 // INSERTAR TODA LA DATA DE CARAMELOS
-const resultadoCandy = dataPokemon.filtradoDeCaramelos(allPokemon);
+const resultadoCandy = dataPokemon.filterCandy(allPokemon);
 resultCandy.innerHTML = resultadoCandy.toFixed(0) + '%' ;
