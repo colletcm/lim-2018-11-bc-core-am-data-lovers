@@ -356,53 +356,56 @@ const testAllPokemon6 = [{
 const testAllPokemon7 = 2.6490066225165565;
 
 describe('dataPokemon', () => {
-  it('deberia ser un objeto', () => {
+  it('It should be an object', () => {
     expect(typeof dataPokemon).toBe('object');
   });
-  describe('dataPokemon.filtradoKm', () => {
-    it('deberia ser una funcion de km', () => {
+  describe('dataPokemon.filterkm', () => {
+    it('It should be a function of km', () => {
       expect(typeof dataPokemon.filterKm).toBe('function');
     });
-    it('deberia filtrarme por 2 km', () => {
+    it('Should filter by 2km', () => {
       expect(dataPokemon.filterKm(testAllPokemon, '2 km')).toEqual(testAllPokemon2);
     });
   });
-  describe('dataPokemon.filterWe', () => {
-    it('deberia ser una funcion de Debilidades', () => {
-      expect(typeof dataPokemon.filterWe).toBe('function');
+  describe('dataPokemon.filterWeaknesses', () => {
+    it('Should be a function of Weaknesses', () => {
+      expect(typeof dataPokemon.filterWeaknesses).toBe('function');
     });
-    it('deberia filtrarme por Debilidades', () => {
-      expect(dataPokemon.filterWe(testAllPokemon, 'Fire')).toEqual(testAllPokemon3);
-    });
-  });
-  describe('dataPokemon.filtradoTipos', () => {
-    it('deberia ser una funcion de Tipos', () => {
-      expect(typeof dataPokemon.filtradoTipos).toBe('function');
-    });
-    it('deberia filtrarme por Tipos', () => {
-      expect(dataPokemon.filtradoTipos(testAllPokemon, 'Fire')).toEqual(testAllPokemon5);
+    it('should filter by weak to fire', () => {
+      expect(dataPokemon.filterWeaknesses(testAllPokemon, 'Fire')).toEqual(testAllPokemon3);
     });
   });
-  describe('dataPokemon.ordenarAlfabeticamente', () => {
-    it('deberia ser una funcion de Ordenar', () => {
-      expect(typeof dataPokemon.ordenarAlfabeticamente).toBe('function');
+  describe('dataPokemon.filterTypes', () => {
+    it('Should be a function of types', () => {
+      expect(typeof dataPokemon.filterTypes).toBe('function');
     });
-    it('deberia filtrarme por Ordenar por número', () => {
-      expect(dataPokemon.ordenarAlfabeticamente(testAllPokemon, 'ordernarnumero')).toEqual(testAllPokemon8);
-    });
-    it('deberia filtrarme por Ordenar de A-Z', () => {
-      expect(dataPokemon.ordenarAlfabeticamente(testAllPokemon, 'ascendente')).toEqual(testAllPokemon4);
-    });
-    it('deberia filtrarme por Ordenar de Z-A', () => {
-      expect(dataPokemon.ordenarAlfabeticamente(testAllPokemon, 'descendente')).toEqual(testAllPokemon6);
+    it('It must be filtered by Type of Fire', () => {
+      expect(dataPokemon.filterTypes(testAllPokemon, 'Fire')).toEqual(testAllPokemon5);
     });
   });
-  describe('dataPokemon.filtradoDeCaramelos', () => {
-    it('deberia ser una funcion de filtrar porcentaje de Evolucion con caramelos', () => {
-      expect(typeof dataPokemon.filtradoDeCaramelos).toBe('function');
+  describe('dataPokemon.sortOrder', () => {
+    it('Should be a function of sort', () => {
+      expect(typeof dataPokemon.sortOrder).toBe('function');
     });
-    it('deberia sacar el porcentaje de candy en base a los 151 pokémon', () => {
-      expect(dataPokemon.filtradoDeCaramelos(testAllPokemon)).toEqual(testAllPokemon7);
+    it('should filter all the data', () => {
+      expect(dataPokemon.sortOrder(testAllPokemon, 'order-options')).toEqual(testAllPokemon8);
+    });
+    it('should filter order by number', () => {
+      expect(dataPokemon.sortOrder(testAllPokemon, 'order-number')).toEqual(testAllPokemon8);
+    });
+    it('should filter from A-Z', () => {
+      expect(dataPokemon.sortOrder(testAllPokemon, 'ascending')).toEqual(testAllPokemon4);
+    });
+    it('should filter from Z-A', () => {
+      expect(dataPokemon.sortOrder(testAllPokemon, 'descending')).toEqual(testAllPokemon6);
+    });
+  });
+  describe('dataPokemon.filterCandy', () => {
+    it('Should be a function filterCandy', () => {
+      expect(typeof dataPokemon.filterCandy).toBe('function');
+    });
+    it('should be a function of filtering Evolution percentage with candies', () => {
+      expect(dataPokemon.filterCandy(testAllPokemon)).toEqual(testAllPokemon7);
     });
   });
 });
