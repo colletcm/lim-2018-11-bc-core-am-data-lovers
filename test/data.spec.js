@@ -361,18 +361,18 @@ describe('dataPokemon', () => {
   });
   describe('dataPokemon.filtradoKm', () => {
     it('deberia ser una funcion de km', () => {
-      expect(typeof dataPokemon.filtradoKm).toBe('function');
+      expect(typeof dataPokemon.filterKm).toBe('function');
     });
     it('deberia filtrarme por 2 km', () => {
-      expect(dataPokemon.filtradoKm(testAllPokemon, '2 km')).toEqual(testAllPokemon2);
+      expect(dataPokemon.filterKm(testAllPokemon, '2 km')).toEqual(testAllPokemon2);
     });
   });
-  describe('dataPokemon.filtradoDebilidades', () => {
+  describe('dataPokemon.filterWe', () => {
     it('deberia ser una funcion de Debilidades', () => {
-      expect(typeof dataPokemon.filtradoDebilidades).toBe('function');
+      expect(typeof dataPokemon.filterWe).toBe('function');
     });
     it('deberia filtrarme por Debilidades', () => {
-      expect(dataPokemon.filtradoDebilidades(testAllPokemon, 'Fire')).toEqual(testAllPokemon3);
+      expect(dataPokemon.filterWe(testAllPokemon, 'Fire')).toEqual(testAllPokemon3);
     });
   });
   describe('dataPokemon.filtradoTipos', () => {
