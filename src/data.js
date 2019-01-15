@@ -30,17 +30,17 @@ const filterTypes = (data, type) => {
 
 // FILTRADO POR DEBILIDADES
 const filterWeaknesses = (data, weaknesses) => {
-  let resul filterWeaknesses = [];
+  let resultfilterWeaknesses = [];
   const copyData = [];
   for (let i = 0; i < data.length; i++) {
     copyData.push(Object.assign({}, {
       name: data[i].name, num: data[i].num, weaknesses: data[i].weaknesses, type: data[i].type, img: data[i].img
     }));
   }
-  resul filterWeaknesses = copyData.filter((objPokemon) => {
+  resultfilterWeaknesses = copyData.filter((objPokemon) => {
     return objPokemon.weaknesses.includes(weaknesses) === true;
   });
-  return resul filterWeaknesses;
+  return resultfilterWeaknesses;
 };
 
 // FILTRADO DE A-Z Z-A
@@ -87,7 +87,7 @@ const filterCandy = (data) => {
 window.dataPokemon = {
   filterKm,
   filterTypes,
- filterWeaknesses,
+  filterWeaknesses,
   filterCandy,
   sortOrder
 };
