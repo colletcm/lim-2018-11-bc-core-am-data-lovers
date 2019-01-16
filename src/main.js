@@ -1,7 +1,7 @@
 // llamando a la Data y a todos los select
 const allPokemon = POKEMON.pokemon;
 const resultallPokemon = document.getElementById('all-pokemon');
-const resultCandy = document.getElementById('screen-news-div');
+const resultCandy = document.getElementById('result-candy-count');
 const optionWeak = document.getElementById('option-weak');
 const optionType = document.getElementById('option-type');
 const optionEgg = document.getElementById('option-egg');
@@ -11,6 +11,7 @@ const optionSort = document.getElementById('option-sort');
 const mainMenu = document.getElementById('main-menu');
 mainMenu.addEventListener('click', () => {
   document.getElementById('main').style.display = 'block';
+  document.getElementById('introduction').style.display = 'block';
   document.getElementById('screen-pokedex').style.display = 'none';
   document.getElementById('screen-sort').style.display = 'none';
   document.getElementById('screen-egg').style.display = 'none';
@@ -37,7 +38,6 @@ mainPokedex.addEventListener('click', () => {
 const mainEgg = document.getElementById('egg-menu');
 mainEgg.addEventListener('click', () => {
   document.getElementById('main').style.display = 'none';
-  document.getElementById('introduction').style.display = 'none';
   document.getElementById('screen-pokedex').style.display = 'none';
   document.getElementById('screen-sort').style.display = 'none';
   document.getElementById('screen-egg').style.display = 'block';
@@ -94,16 +94,15 @@ const completeList = (data) => {
      <div class="card-link">
       <article class="blog-card">
        <div class="detalles">
-         <h1 class = "numero">${pokemonDataCopy.num}</h1>
+         <h1 class = "number">${pokemonDataCopy.num}</h1>
          <h2 class = "list"> ${pokemonDataCopy.name} </h2>
-         <h3><img class= "imagen" src=${pokemonDataCopy.img}></h3>
+         <h3><img class= "image" src=${pokemonDataCopy.img}></h3>
          <h4 class = "type">${pokemonDataCopy.type}</h4>
        </div>
      </article>
      </div>
     `;
-    paintAllData
- += card;
+    paintAllData += card;
   });
   resultallPokemon.innerHTML = paintAllData;
 };
@@ -135,5 +134,5 @@ optionSort.addEventListener('change', () => {
 });
 
 // INSERTAR TODA LA DATA DE CARAMELOS
-const resultadoCandy = dataPokemon.filterCandy(allPokemon);
-resultCandy.innerHTML = resultadoCandy.toFixed(0) + '%' ;
+const resultCandyData = dataPokemon.filterCandy(allPokemon);
+resultCandy.innerHTML = resultCandyData.toFixed(0) + '%' ;
